@@ -1,0 +1,26 @@
+$grid__bp-xs: 428;
+$grid__bp-sm: 576;
+$grid__bp-md: 768;
+$grid__bp-lg: 992;
+$grid__bp-xl: 1200;
+$grid__bp-xxl: 1440;
+$grid__bp-3xl: 1680;
+$grid__cols: 12;
+$gutter: 30;
+
+$container-width-xl: 1160; //1110 +20 scroll +30 отступы
+$container-width-xxl: 1360;
+$container-width-3xl: 1550;
+
+
+$map-grid-props: (
+    '': 0,
+    '-xs': $grid__bp-xs,
+    '-sm': $grid__bp-sm,
+    '-md': $grid__bp-md,
+    '-lg': $grid__bp-lg,
+    '-xl': $grid__bp-xl,
+    '-xxl': $grid__bp-xxl,
+    '-3xl': $grid__bp-xxl
+);
+

@@ -1,0 +1,17 @@
+.logo{
+   display: flex;
+   align-items: center;
+   &__img {
+      max-width: rem(40px);
+      max-height: rem(36px);
+   }
+   &__text {
+      display: block;
+      font-size: rem(30px);
+      font-weight: 700;
+      margin-left: rem(11px);
+      color: #173A56;
+   }
+}
+
+

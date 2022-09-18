@@ -1,0 +1,98 @@
+.container {
+   max-width: 100%;
+   margin: 0 auto;
+   padding-right: calc($gutter / 2) * 1px;
+    padding-left: calc($gutter / 2) * 1px;
+    @include create-mq($grid__bp-xl, 'min') {
+      max-width: $container-width-xl * 1px;
+    }
+    @include create-mq($grid__bp-xxl, 'min') {
+      max-width: $container-width-xxl * 1px;
+    }
+    @include create-mq($grid__bp-3xl, 'min') {
+      max-width: $container-width-3xl * 1px;
+    }
+   }
+ .row {
+   display: flex;
+   flex-wrap: wrap;
+   margin-right: calc($gutter / -2) * 1px;
+   margin-left: calc($gutter / -2) * 1px;
+ }
+ .row > .col, .row > [class*="col-"] {
+   width: 100%;
+   min-height: 1px;
+   padding-right: calc($gutter / 2) * 1px;
+   padding-left: calc($gutter / 2) * 1px;
+ }
+ .row-flush {
+    margin-left: 0;
+    margin-right: 0;
+ 
+    > .col,
+    > [class*="col-"] {
+       padding-left: 0;
+       padding-right: 0;
+    }
+ }
+ @each $modifier, $breakpoint in $map-grid-props {
+   @include create-mq($breakpoint, 'min') {
+     .row#{$modifier}-start {
+       justify-content: flex-start;
+     }
+     .row#{$modifier}-center {
+       justify-content: center;
+     }
+     .row#{$modifier}-end {
+       justify-content: flex-end;
+     }
+     .row#{$modifier}-around {
+       justify-content: space-around;
+     }
+     .row#{$modifier}-between {
+       justify-content: space-between;
+     }
+     .row#{$modifier}-align-center{
+       align-items: center;
+     }
+   }
+ }
+ @each $modifier, $breakpoint in $map-grid-props {
+   @include create-mq($breakpoint, 'min') {
+     .offset#{$modifier}-0 {
+       margin-left: 0;
+     }
+     @for $i from 1 through $grid__cols {
+       .order#{$modifier}-#{$i} {
+         order: #{$i};
+       }
+       .offset#{$modifier}-#{$i} {
+         margin-left: calc((100 / ($grid__cols / $i) ) * 1%);
+       }
+     }
+   }
+ }
+ 
+ @each $modifier, $breakpoint in $map-grid-props {
+   @include create-col-classes($modifier, $grid__cols, $breakpoint)
+ }
+ .hidden {
+   display: none !important;
+ }
+ @each $modifier , $breakpoint in $map-grid-props {
+   @if($modifier != '') {
+     @include create-mq($breakpoint - 1, 'max') {
+       .hidden#{$modifier}-down {
+         display: none !important;
+       }
+     }
+     @include create-mq($breakpoint, 'min') {
+       .hidden#{$modifier}-up {
+         display: none !important;
+       }
+     }
+   }
+   
+ }
+ 
+ 

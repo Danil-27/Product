@@ -1,0 +1,49 @@
+.menu{
+   display: none;
+}
+
+@media screen and (min-width:992px) {
+   .menu {
+      display: flex;
+      align-items: center;
+      &__body {
+      }
+      &__list {
+         display: flex;
+      }
+      &__item {
+         list-style-type: none;
+         &_m {
+            margin-left: rem(24px);
+         }
+      }
+      &__link {
+         text-decoration: none;
+         color:$black;
+         padding: 0 rem(2px);
+         &_hover:hover {
+            font-weight: 600;
+            margin-left: rem(-1px);
+            margin-right: rem(-1px);
+         }
+         &_bg-in , &_bg-up {
+            font-weight: 600;
+            padding:rem(10px) rem(25px);
+            margin-left: rem(24px);
+            border-radius: 4px;
+         }
+         &_bg-in {
+            border: solid 1px #000;
+            border: rem(1px) solid #BCD0E5;
+         }
+         &_bg-up {
+            background: #02897A;
+            color: $white;
+         }
+      }
+      &__icon {
+         display: flex;
+         margin-left: rem(24px);
+      }
+   }
+}
