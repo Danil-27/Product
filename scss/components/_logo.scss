@@ -1,6 +1,8 @@
 .logo{
    display: flex;
    align-items: center;
+   z-index: 2;
+   text-decoration: none;
    &__img {
       max-width: rem(40px);
       max-height: rem(36px);
@@ -10,7 +12,16 @@
       font-size: rem(30px);
       font-weight: 700;
       margin-left: rem(11px);
-      color: #173A56;
+      color: var(--color-logo);
+      display: none;
+   }
+}
+
+@media screen and (min-width:380px) {
+   .logo {
+      &__text {
+         display: block;
+      }
    }
 }
 

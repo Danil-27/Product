@@ -1,2 +1,43 @@
-$black: #000;
-$white: #fff;
+//const
+:root {
+   --color-white: #fff;
+   --color-black: #000;
+   --color-border-sign-un: #BCD0E5;
+}
+
+
+.light {
+   --color-text-black: #000;
+   --color-text-white: #fff;
+   --color-bg-white: #fff;
+   --color-bg-black: #000;
+   
+   --color-black-text: #000;
+   --color-white-text: #fff;
+   --color-green: #02897A;
+   --color-blue: #4D8DFF;
+   --color-violet: #740A76;
+   --color-orange: #F03E3D;
+   --color-marengo: #475E69;
+   --color-slate-gray: #30444E;
+   --color-green-blue: #1F2E35;
+   //Элементы header
+   --color-logo: #173A56;
+   --color-menu-active: rgba(255, 255, 255, 0.6);
+   --color-menu-body: #fff;
+   --color-menu-992: #fff;
+}
+
+.dark {
+   background-color: rgba(#000 , 0.6);
+   --color-text-black: #fff;
+   --color-text-white: #000;
+   --color-bg-white: #1F2E35;
+   --color-bg-black: #fff;
+   
+   //Элементы header
+   --color-menu-active: rgba(0, 0, 0, 0.6);
+   --color-logo: #fff;
+   --color-menu-body: #1F2E35;
+   --color-menu-992: #1F2E35;
+}
