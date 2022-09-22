@@ -1,5 +1,23 @@
 .section {
-   &__1 {
+   margin-bottom: rem(100px);
+   &_content{
+      margin-top: 0;
+   }
+   &_for-You {
 
+   }
+}
+
+@media screen and (min-width:992px) {
+   .section {
+      margin-bottom: rem(150px);
+      &_content{
+         margin-top: 0;
+         margin-bottom: rem(115px);
+      }
+      &_for-You {
+         // padding-bottom: rem(90px);
+   
+      }
    }
 }

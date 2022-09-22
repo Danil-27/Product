@@ -1,6 +1,10 @@
 .page {
-   padding-top: rem(200px);
-   height: 4000px;
-   background-color: rgb(116, 84, 47);
-   
+   padding-top: rem(100px); //header + indent
 }
+
+
+@media screen and (min-width:992px) {
+   .page {
+      padding-top: rem(105px); //header + indent
+   }
+   }

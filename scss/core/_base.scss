@@ -3,11 +3,13 @@ html, body{
    line-height: var(--baseline);
 }
 
-body{
-   font-family: var(--font-family);
-   font-weight: var(--font-weight);
-}
-
 html.noscroll {
    overflow: hidden;
 }
+
+body{
+   font-family: var(--font-family);
+   font-weight: var(--font-weight);
+   background-color: var(--color-bg-white);
+}
+
