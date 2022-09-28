@@ -1,0 +1,20 @@
+.subtitle {
+   font-weight: 600;
+   margin-bottom: rem(8px);
+   color: var(--color-text-black);
+   &_clients {
+      text-align: center;
+      max-width: rem(537px);
+      margin: 0 auto;
+      font-weight: 500;
+      margin-bottom: rem(50px);
+   }
+}
+
+
+
+
+@media screen and (min-width:992px) {
+
+   
+}

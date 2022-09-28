@@ -8,12 +8,26 @@
          font-size: rem(36px);
       }
    }
-   &_for-You {
+   &_for-you {
       max-width: rem(320px);
       margin: 0 auto;
       margin-bottom: rem(18px);
       font-size: rem(32px);
       text-align: center;
+   }
+   &_process {
+      text-align: center;
+   }
+   &_strategies {
+      margin-bottom: rem(8px);
+   }
+   &_price {
+      text-align: center;
+      margin-bottom: rem(8px);
+   }
+   &_clients {
+      text-align: center;
+      margin-bottom: rem(8px);
    }
 }
 
@@ -28,8 +42,9 @@
 }
 @media screen and (min-width:992px) { 
    .title {
-      &_for-You {
+      &_for-you {
          margin-bottom: rem(22px);
+         max-width: rem(520px);
       }
    }
 }

@@ -1,0 +1,81 @@
+.card {
+   text-align: center;
+   max-width: rem(322px);
+   height: rem(456px);
+   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+   padding: rem(24px) 0 rem(32px) 0;
+   background-color: var(--color-white);
+   border-radius: rem(8px);
+   transition: all .3s;
+   &:not(:last-child) {
+      margin-bottom: rem(32px);
+   }
+   &__services {
+      font-weight: 700;
+      font-size: rem(24px);
+   }
+   &__subtitle {
+      margin-bottom: rem(16px);
+   }
+   &__month {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   &__cost , &_d  {
+      font-weight: 700;
+      color: var(--color-green-bg);
+   }
+   &__cost {
+      font-size: rem(78px);
+   }
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: rem(25px);
+      margin-left: rem(8px);
+      margin-bottom: rem(16px);
+   }
+   &_d {
+      font-size: rem(25px);
+      margin-bottom: rem(4px);
+      line-height: 1;
+      
+   }
+   &__time {
+      color: var(--color-month);
+   }
+   &__additionally {
+      margin-bottom: rem(38px);
+      span {
+         display: block;
+         font-weight: 500;
+      }
+      span:not(:last-child) {
+         margin-bottom: rem(16px);
+      }
+   }
+   &__button {
+      transition: all .2s;
+   }
+}
+
+.card:hover {
+   background-color: var(--color-green-bg);
+   .card__cost , .card_d , .card__subtitle , .card__services , .card__additionally {
+      color: var( --color-white);
+   }
+   .card__button{
+      background-color: var( --color-white);
+      color: var(--color-black);
+   }
+}
+.card__button:hover{
+   background: #30444E;
+   border: 1px solid #30444E;
+   box-shadow: 0px 2px 0 #30444E, 2px 4px 6px #30444E;
+   -webkit-transition: all 150ms linear;
+   transition: all 150ms linear;
+}
+

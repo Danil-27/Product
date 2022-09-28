@@ -1,4 +1,4 @@
-.for-You {
+.for-you {
    &__item {
       display: flex;
       flex-direction: column;
@@ -31,7 +31,7 @@
       }
    }
    &__main {
-      font-size: 22px;  
+      font-size: rem(22px);  
       margin-top: rem(24px);
    }
    &__text {
@@ -39,54 +39,13 @@
       max-width: rem(240px);
    }
 }
-.bg-1 {
-   width: 100%;
-   // background-image: url("/imeges/for-You/Bg.svg");
-   background-size: contain;
-   background-repeat: no-repeat;
-   padding-bottom: rem(90px);
-}
+
 
 @media screen and (min-width:992px) {
-   .for-You {
+   .for-you {
       &__item {
-         display: flex;
-         flex-direction: column;
          align-items: flex-start;
          text-align: start;
-         margin-top: rem(32px);
-         color: var(--color-text-black);
-      }
-      &__icon {
-         display: flex;
-         width: rem(50px);
-         height: rem(50px);
-         border-radius: 19px;
-         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-         
-         img {
-            margin: auto;
-         }
-         &_cursor {
-            background-color: #02897A;
-         }
-         &_surveys {
-            background-color: #4D8DFF;
-         }
-         &_heart {
-            background-color: #740A76;
-         }
-         &_watch {
-            background-color: #F03E3D;
-         }
-      }
-      &__main {
-         font-size: 22px;  
-         margin-top: rem(24px);
-      }
-      &__text {
-         margin-top: rem(8px);
-         max-width: rem(240px);
       }
    }
 }

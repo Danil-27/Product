@@ -1,21 +1,32 @@
 .menu {
    position: fixed;
    top: 0;
-   right: 100%;
+   left: 0;
    width: 100%;
    height: 100%;
    overflow: auto;
    background-color: var(--color-menu-active);
-   transition: all 1s;
+   transition: opacity 0.25s linear;
+   opacity: 0;
+   visibility: hidden;
    &.active {
-      right: 0;
+      opacity: 1;
+      visibility: visible;
+      .menu__body {
+         left: 0;
+      }
    }
    &__body {
       display: flex;
+      position: absolute;
+      top: 0;
+      left: -60%;
       flex-direction: column;
       width: 60%;
       min-height: 100%;
       background-color: var(--color-menu-body);
+      transition: all 0.65s linear;
+      overflow-y: auto;
    }
    &__list {
       display: flex;
@@ -44,10 +55,13 @@
       overflow: hidden;
       display: flex;
       justify-content: flex-end;
-      background-color: var(--color-menu-992);
-      transition: all 0s;
+      background-color: var(--color-menu-992);     
+      opacity: 1;
+      visibility: visible;
       &__body {
          width: auto;
+         position: static;
+         transition: 0s;
       }
       &__list {
          display: flex;

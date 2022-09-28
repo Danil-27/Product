@@ -2,9 +2,59 @@
    margin-bottom: rem(100px);
    &_content{
       margin-top: 0;
+      // display: none;//
    }
-   &_for-You {
+   &_for-you {
+      // display: none;//
+   }
+   &_info {
+      // display: none;//
+   }
+   &_process {
+      // display: none;//
+   }
+   &_strategies {
+      // display: none;//
+   } 
+   &_price {
+      // display: none;//
+   }
+   &_bg-t , &_bg-b {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      &::after {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 50%;
+         transform: translateX(-50%);
+         width: 270%;
+         height: 100%;
+         z-index: -1;
+      }
+   }
+   &_bg-b {
+      padding-bottom: rem(40px);
+      &::after {
+         border-radius:  0 0 50% 50%;
+      }
+   }
+   &_bg-t {
+      padding-top: rem(40px);
+      &::after {
+         border-radius: 50% 50% 0 0;
+      }
+   }
+}
 
+@media screen and (min-width:575px) {
+   .section {
+      &_bg-t , &_bg-b {
+         &::after {
+            width: 170%;
+         }
+      }
    }
 }
 
@@ -15,9 +65,10 @@
          margin-top: 0;
          margin-bottom: rem(115px);
       }
-      &_for-You {
-         // padding-bottom: rem(90px);
-   
+      &_bg-t , &_bg-b {
+         &::after {
+            width: 150%;
+         }
       }
    }
 }

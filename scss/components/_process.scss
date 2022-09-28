@@ -1,0 +1,111 @@
+.process {
+   &__title {
+
+   }
+   &__subtitle {
+      max-width: rem(542px);
+      text-align: center;
+      color: var(--color-text-black);
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: rem(16px);
+   }
+   &__info {
+
+   }
+
+   &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: rem(32px);
+      &_one {
+         order: 1;
+      }
+      &_two {
+         order: 4;
+      }
+      &_three {
+         order: 2;
+      }
+      &_four {
+         order: 3;
+      }
+   }
+   &__icon {
+      margin: 0 rem(16px) 0 0;
+      &_one {
+         order: 2;
+         margin: 0 0 0 rem(16px);
+      }
+   }
+   &__img {
+     
+   }
+   &__text {
+
+   }
+   &__text-bg {
+      background-color: var(--color-white);
+      padding: rem(12px) rem(16px);
+      border-radius: 20px;
+      box-shadow: 0px 2px 8px rgba(86, 117, 146, 0.1);
+      text-align: center;
+      font-weight: 500;
+      // Декаративка смс
+      &_one ,&_three , &_four , &_two {
+         position: relative;
+         &::after , &::before  {
+            content: "";
+            position: absolute;
+            background-color: var(--color-white);
+            border-radius: 100%;
+         }
+         &::after {
+            bottom: rem(-7px);
+            width: rem(17px);
+            height: rem(17px);
+         }
+         &::before {
+            bottom: rem(-16px);
+            width: rem(9px);
+            height: rem(9px);
+         }
+      }
+      &_one , &_four  {
+         &::after {
+            left: rem(32px);
+         }
+         &::before {
+            left: rem(21px) ;
+         }
+      }
+       &_three , &_two {
+         &::after {
+            right: rem(32px);
+         }
+         &::before {
+            right: rem(21px);
+         }
+      }
+      &__button  {
+         padding: rem(15px) rem(30px);
+      }
+   }
+}
+
+
+@media screen and (min-width:992px) {
+   .process {
+      &__list {
+         order: 0;
+      }
+      &__icon {
+         margin: 0 rem(16px) 0 0;
+         &_one {
+            order: 2;
+            margin: 0 0 0 rem(16px);
+         }
+      }
+   }
+}

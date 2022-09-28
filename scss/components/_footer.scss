@@ -1,0 +1,142 @@
+.footer {
+   color: var(--color-text-black);
+   &__item {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+   }
+   &__product {
+      display: flex;
+      justify-content: center;
+      margin-bottom: rem(25px);
+   }
+   &-box-img {
+      display: flex;
+      align-items: center;
+      span {
+         font-size: 25px;
+         font-weight: 700;
+         margin-left: rem(16px);
+         margin-top: rem(7px);
+         color: var(--color-logo);
+      }
+   }
+   &__wrapper {
+      display: flex;
+      justify-content: center;
+      a {
+         display: inline-block;
+         background-repeat: no-repeat;
+         background-position: center;
+         width: rem(40px);
+         height: rem(40px);
+         border-radius: 50%;
+         background-color: #EDFFFC; 
+         transition: all .6s;
+         &:hover {
+            background-color: #bbe6df; 
+         }
+      }
+   }
+   &__instagram {
+      background-image: url("/imeges/footer/instagram.svg");
+      margin-right: rem(16px);
+   }
+   &__facebook {
+      background-image: url("/imeges/footer/facebook.svg");
+   }
+   &__martin {
+      margin-left: rem(16px);
+      background-image: url("/imeges/footer/Vector.svg");
+   }
+   &_Resource, &_Legal,  &_icon {
+      margin-bottom: rem(32px);
+   }
+   &__title {
+      font-weight: 500;
+      font-size: rem(20px);
+      margin-bottom: rem(8px);
+      &_m {
+         margin-bottom: rem(34px);
+      }
+   }
+   &_icon {
+   }
+   &_Resource {
+   }
+   &_Legal {
+   }
+   &_deal {
+      display: flex;
+      align-items: center;
+      input {
+         width: 100%;
+         height: rem(48px);
+         padding: rem(5px);
+         margin-bottom: rem(20px);
+      }
+   }
+   &__p {
+      text-align: center;
+      margin-top: rem(45px);
+      margin-bottom: rem(45px);
+   }
+}
+@media screen and (min-width:428px){
+   .footer {
+      &_deal {
+         input {
+            width: rem(325px);
+         }
+      }
+   }
+}
+
+@media screen and (min-width:992px) {
+   .footer {
+      &__item {
+         display: flex;
+         flex-direction: column;
+         text-align: start;
+
+      }
+      &__product {
+   
+      }
+      &-box-img {
+      }
+      &__wrapper {
+      }
+      &_Resource, &_Legal,  &_icon {
+         margin-bottom: rem(0px);
+      }
+      &__title {
+         font-weight: 500;
+         font-size: rem(20px);
+         margin-bottom: rem(8px);
+         &_m {
+            margin-bottom: rem(34px);
+         }
+      }
+      &_icon {
+      }
+      &_Resource {
+      }
+      &_Legal {
+      }
+      &_deal {
+         align-items: flex-start;
+         input {
+            width: 100%;
+            height: rem(48px);
+            padding: rem(5px);
+            margin-bottom: rem(20px);
+         }
+      }
+      &__p {
+         text-align: center;
+         margin-top: rem(3px);
+         margin-bottom: rem(24px);
+      }
+   }
+}

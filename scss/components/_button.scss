@@ -1,0 +1,60 @@
+.button:hover {
+   background-color: #10a897;
+}
+.button {
+   background-color: var(--color-green-bg);
+   font-weight: 700;
+   color: var(--color-white);
+   border: none;
+   border-radius: rem(4px);
+   transition: all .6s;
+   &_content {
+      padding: rem(15px) rem(25px);
+      margin-right: rem(28px);
+   }
+   &_for-you {
+      display: block;
+      margin: 0 auto;
+      padding: rem(15px) rem(34px);
+      margin-top: rem(34px);
+   }
+   &_process {
+      display: block;
+      margin: 0 auto;
+      margin-top: rem(50px);
+      padding: rem(15px) rem(30px);
+      &:hover {
+       
+      }
+   }
+   &_business {
+      background-color: var(--color-white);
+      color: var(--color-green-bg);
+      padding: rem(10px) rem(35px);
+      margin-bottom: rem(32px);
+      &:hover {
+         background-color: #ffffff;
+      } 
+   }
+   
+   &_card {
+      font-weight: 500;
+      padding: rem(10px) rem(18px);
+   }
+   &_footer {
+      width: rem(130px);
+      height: rem(40px);
+   }
+}
+
+
+
+
+@media screen and (max-width:360px) {
+   .button {
+      &_content {
+         justify-content: center;
+         margin-right: rem(0px);
+      }
+   }
+}
