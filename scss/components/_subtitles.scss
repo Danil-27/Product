@@ -2,19 +2,27 @@
    font-weight: 600;
    margin-bottom: rem(8px);
    color: var(--color-text-black);
-   &_clients {
+   &_process , &_clients , &_price {
       text-align: center;
-      max-width: rem(537px);
-      margin: 0 auto;
+   }
+   &_process , &_clients {
+      margin-left: auto;
+      margin-right: auto;
+   }
+   &_strategies , &_clients  {
       font-weight: 500;
+   }
+   &_process {
+      max-width: rem(542px);
+      margin-top: rem(16px);
+   }
+   &_strategies {
+   }
+   &_price {
+      margin-bottom: rem(75px);
+   }
+   &_clients {
+      max-width: rem(537px);
       margin-bottom: rem(50px);
    }
-}
-
-
-
-
-@media screen and (min-width:992px) {
-
-   
 }

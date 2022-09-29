@@ -28,6 +28,12 @@ function handlerResize() {
 
 window.addEventListener("resize", debounce(handlerResize, 500)); 
 
+html.addEventListener("click", () => {
+   if (width < 992) {
+      // html.classList.remove("noscroll");  
+   }
+});
+
 btn.addEventListener("click", () => {     // Если мы нажимаем на burger
   menu.classList.toggle("active");        // После нажития переопределяет класс
   btn.classList.toggle("active");         // После нажития переопределяет класс
@@ -44,12 +50,6 @@ menu.addEventListener("click", (e) => {
       icon.classList.toggle("active");          // Если True , то переопределяет класс
       // menuBody.classList.
    }
-   else (width < 992)  
-      // menu.classList.remove("active");          // Если false , то Закрываем класс  
-      // btn.classList.remove("active");           // Если false , то Закрываем класс  
-      // html.classList.toggle("noscroll");        // Если false , то Закрываем класс  
-      // icon.classList.remove("active");          // Если false , то Закрываем класс  
-   
 });
 
 //плавный переход 

@@ -60,12 +60,6 @@
          margin-bottom: rem(34px);
       }
    }
-   &_icon {
-   }
-   &_Resource {
-   }
-   &_Legal {
-   }
    &_deal {
       display: flex;
       align-items: center;
@@ -82,6 +76,7 @@
       margin-bottom: rem(45px);
    }
 }
+
 @media screen and (min-width:428px){
    .footer {
       &_deal {
@@ -95,48 +90,18 @@
 @media screen and (min-width:992px) {
    .footer {
       &__item {
-         display: flex;
-         flex-direction: column;
          text-align: start;
 
       }
-      &__product {
-   
-      }
-      &-box-img {
-      }
-      &__wrapper {
-      }
       &_Resource, &_Legal,  &_icon {
          margin-bottom: rem(0px);
-      }
-      &__title {
-         font-weight: 500;
-         font-size: rem(20px);
-         margin-bottom: rem(8px);
-         &_m {
-            margin-bottom: rem(34px);
-         }
-      }
-      &_icon {
-      }
-      &_Resource {
-      }
-      &_Legal {
       }
       &_deal {
          align-items: flex-start;
          input {
             width: 100%;
-            height: rem(48px);
-            padding: rem(5px);
             margin-bottom: rem(20px);
          }
-      }
-      &__p {
-         text-align: center;
-         margin-top: rem(3px);
-         margin-bottom: rem(24px);
       }
    }
 }

@@ -24,7 +24,7 @@
    }
    &__cost , &_d  {
       font-weight: 700;
-      color: var(--color-green-bg);
+      color: var(--color-green);
    }
    &__cost {
       font-size: rem(78px);
@@ -62,7 +62,7 @@
 }
 
 .card:hover {
-   background-color: var(--color-green-bg);
+   background-color: var(--color-green);
    .card__cost , .card_d , .card__subtitle , .card__services , .card__additionally {
       color: var( --color-white);
    }

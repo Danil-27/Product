@@ -22,14 +22,14 @@ new Swiper('.strategies__swiper',{
       clickable: true,
    },
    // Автоматическая прокрутка
-   autoplay: {
-      //Пауза между прокруткой
-      delay: 2500,
-      //Закончить на последнем слайде
-      stopOnLastSlide: true,
-      //Отключить после ручного переключения
-      disableOnInteraction: false, 
-   },
+   // autoplay: {
+   //    //Пауза между прокруткой
+   //    delay: 2500,
+   //    //Закончить на последнем слайде
+   //    stopOnLastSlide: true,
+   //    //Отключить после ручного переключения
+   //    disableOnInteraction: false, 
+   // },
    //Отключаем предзагрузку картинки
    preloadImeges: false,
    //Подзагрузка картинок

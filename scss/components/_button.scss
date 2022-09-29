@@ -1,8 +1,8 @@
 .button:hover {
-   background-color: #10a897;
+   background-color: var(--color-hover);
 }
 .button {
-   background-color: var(--color-green-bg);
+   background-color: var(--color-green);
    font-weight: 700;
    color: var(--color-white);
    border: none;
@@ -29,7 +29,7 @@
    }
    &_business {
       background-color: var(--color-white);
-      color: var(--color-green-bg);
+      color: var(--color-green);
       padding: rem(10px) rem(35px);
       margin-bottom: rem(32px);
       &:hover {

@@ -25,14 +25,6 @@
    &__header {
       color: var(--color-text-black);
    }
-   &__subtitle {
-      font-weight: 600;
-      margin-bottom: rem(8px);
-   }
-   &__title {
-      font-weight: 700;
-      margin-bottom: rem(23px);
-   }
    &__caption {
       font-weight: 600;
       margin-bottom: rem(12px);
@@ -90,7 +82,6 @@
 @media screen and (min-width:768px) {
    .info {
       &__picture {
-         display: flex;
          align-items: center;
          margin-bottom: 0;
          &_order {
@@ -111,8 +102,6 @@
          }
       }
       &__img {
-         background-repeat: no-repeat;
-         background-size: contain;
          width: rem(500px);
          &_one {
             width: rem(475px);
@@ -128,115 +117,3 @@
       }
    }
 }
-
-//    &__picture {
-//       display: flex;
-//       justify-content: center;
-//       margin-bottom: rem(50px);
-//       width: 600px;
-//       height: 600px;
-//       background-color: #FF9900;
-//    }
-//    &__img {
-//       background-repeat: no-repeat;
-//       background-size: contain;
-//       &_one {
-//          width: rem(350px);
-//          height: rem(310px);
-//          background-image: url("/imeges/infarmation/one.svg");
-//       }
-//       &_two {
-//          background-image: url("/imeges/infarmation/one.svg");
-//       }
-//       &_three {
-//          background-image: url("/imeges/infarmation/one.svg");
-         
-//       }
-//    }
-//    &__header {
-//       color: var(--color-text-black);
-//    }
-//    &__subtitles {
-//       margin-bottom: rem(8px);
-//    }
-//    &__caption {
-//       margin-bottom: rem(12px);
-//    }  
-//    &__paragraf {
-//       margin-bottom: rem(16px);
-//    }
-//    //castom
-//    &__paragraf {
-//       max-width: rem(440px);
-//       margin-bottom: rem(30px);
-//    }
-//    &__item {
-//       display: flex;
-//       align-items: center;
-//       margin-bottom: rem(30px);
-//    }
-//    &__tick {
-//       display: flex;
-//       flex: 0 0 auto;
-//       width: rem(35px);
-//       height: rem(35px);
-//       border-radius: rem(14px);
-//       margin-right: rem(30px);
-//       position: relative;
-//       img {
-//          margin: auto;
-//          width: 16px;
-//          height: 12px;
-//       }
-//       &_yellow {
-//          background-color: #FF9900;
-//       }
-//       &_red {
-//          background-color: #F03E3D;
-//       }
-//       &_blue {
-//          background-color: #4D8DFF;
-//       }
-//    }
-//    &__text {
-//       &_l{
-//          max-width: rem(350px);
-//       }
-//       max-width: rem(380px);
-//    }
-// }
-
-// @media screen and (min-width:768px) {
-//    .picture {
-//       align-items: center;
-//       margin-bottom: rem(0px);
-//       &_information {
-//          order: 2;
-//       }
-//       //castom
-//       &__img {
-//          width: rem(545px);
-//          height: rem(500px);
-//       }
-//    }
-// }
-
-// @media screen and (min-width:992px) {
-//    .information {
-//       &__img {
-//          &_one {
-//             background-image: url("/imeges/management/document-big.svg");
-//             width: 530px;
-//             height: 460px;
-//          }
-//          &_two {
-//          }
-//          &_three {
-//          }
-//       }
-//       &__paragraf {
-//       max-width: 486px;
-//       margin-bottom: rem(16px);
-//       }
-//    }
-// }
