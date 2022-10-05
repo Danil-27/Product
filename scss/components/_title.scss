@@ -1,32 +1,65 @@
 .title {
    font-weight: 700;
    color: var(--color-text-black);
-   &_for-you , &_process , &_price , &_clients , &_content span {
-      text-align: center;
+   &_lg {
+      font-size: rem(40px);
    }
-   &_strategies , &_price , &_clients {
-      margin-bottom: rem(8px);
+   &_md {
+      font-size: rem(34px);
    }
-   &_content span {
-         display: block;
-         font-size: rem(36px);
-   }
-   &_for-you {
-      max-width: rem(320px);
-      margin: 0 auto;
-      margin-bottom: rem(18px);
+   &_sm {
       font-size: rem(32px);
    }
-   &_info {
-      font-weight: 700;
-      margin-bottom: rem(23px);
+   &_xs , &_xxs {
+      font-weight: 600;
    }
+   &_xs {
+      font-size: rem(24px);
+   }
+   &_xxs {
+      font-size: rem(16px);
+   }
+
+
+
+
+   // &_strategies , &_price , &_clients {
+   //    margin-bottom: rem(8px);
+   // }
+   // &_content {
+   //       // display: block;
+   //       font-size: rem(36px);
+   // }
+   // &_for-you {
+   //    //span i display: block 
+   //    // max-width: rem(320px); //
+   //    // margin: 0 auto; //
+
+   //    margin-bottom: rem(18px);
+   //    font-size: rem(32px);
+   //    //title sm-ms модификатор размера отдельно создать по размерам32  34 40
+   // }
+   //
+   // &_info {
+   //    // font-weight: 700;
+   //    //titlebold 
+   //    margin-bottom: rem(23px);
+   // }
 }
+
 
 @media screen and (min-width:768px) { 
    .title {
-      &_content span {
-            text-align: start;
+      &_content {
+         text-align: left;
+      }
+   }
+}
+
+@media screen and (max-width:767px) { 
+   .title {
+      .is-block {
+         display: inline;
       }
    }
 }
@@ -35,7 +68,7 @@
    .title {
       &_for-you {
          margin-bottom: rem(22px);
-         max-width: rem(520px);
+         // max-width: rem(520px);
       }
    }
 }
