@@ -11,6 +11,44 @@
 
 
 .light {
+   --color-text-black: #22343D;
+   --color-text-white: #fff;
+   --color-bg-white: #fff;
+   --color-bg-black: #000;
+   //Элементы header
+   --color-logo: #173A56;
+   --color-menu-active: rgba(255, 255, 255, 0.6);
+   --color-menu-body: #fff;
+   --color-menu-992: #fff;
+   --color-link-hover-1: transparent;
+   --color-link-hover-2: transparent;
+   --color-link-hover-3: transparent;
+   //swiper
+   --color-swiper-pagination-bullet: #000;
+}
+
+.dark {
+   --color-text-black: #fff;
+   --color-text-white: #000;
+   --color-bg-white: #1F2E35;
+   --color-bg-black: #fff;
+   //Элементы header
+   --color-menu-active: rgba(0, 0, 0, 0.6);
+   --color-logo: #fff;
+   --color-menu-body: #1F2E35;
+   --color-menu-992: #1F2E35;
+   --color-link-hover-1:rgb(243, 241, 241);
+   --color-link-hover-2:#02897A;
+   --color-link-hover-3:#02897A;
+   //swiper
+   --color-swiper-pagination-bullet: #fff;
+}
+
+
+
+
+
+.light {
    .section_bg-b {
       &::after {
          background:  linear-gradient(179.59deg,rgba(255, 255, 255, 0.0001) 0.35%, #EDEDED  99.63%);
@@ -21,33 +59,9 @@
          background: linear-gradient(179.59deg, #EDEDED 0.35%, rgba(255, 255, 255, 0.0001) 99.63%);
       }
    }
-   --color-text-black: #22343D;
-   --color-text-white: #fff;
-   --color-bg-white: #fff;
-   --color-bg-black: #000;
-   
-   --color-black-text: #000;
-   --color-white-text: #fff;
-   --color-green: #02897A;
-   --color-blue: #4D8DFF;
-   --color-violet: #740A76;
-   --color-orange: #F03E3D;
-   --color-marengo: #475E69;
-   --color-slate-gray: #30444E;
-   --color-green-blue: #1F2E35;
-   //Элементы header
-   --color-logo: #173A56;
-   --color-menu-active: rgba(255, 255, 255, 0.6);
-   --color-menu-body: #fff;
-   --color-menu-992: #fff;
-   --color-link-hover-1: transparent;
-   --color-link-hover-2: transparent;
-   --color-link-hover-3: transparent;
-   // content
-   --color-title: #22343D;
-   //swiper
-   --color-swiper-pagination-bullet: #000;
 }
+
+
 
 .dark {
    .section_bg-b{
@@ -60,21 +74,4 @@
          background: linear-gradient(179.59deg, #22343D 0.35%, rgba(67, 67, 67, 0.0001) 99.63%);
       }
    }
-   --color-text-black: #fff;
-   --color-text-white: #000;
-   --color-bg-white: #1F2E35;
-   --color-bg-black: #fff;
-   
-   //Элементы header
-   --color-menu-active: rgba(0, 0, 0, 0.6);
-   --color-logo: #fff;
-   --color-menu-body: #1F2E35;
-   --color-menu-992: #1F2E35;
-   --color-link-hover-1:rgb(243, 241, 241);
-   --color-link-hover-2:#02897A;
-   --color-link-hover-3:#02897A;
-   // content
-   --color-title: #fff;
-   //swiper
-   --color-swiper-pagination-bullet: #fff;
 }

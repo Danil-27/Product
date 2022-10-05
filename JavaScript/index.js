@@ -52,22 +52,4 @@ menu.addEventListener("click", (e) => {
    }
 });
 
-//плавный переход 
-links.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-       const blockID = link.getAttribute("href").substring(1);
-         document.getElementById(blockID).scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-         });
-      if (width < 992) {
-         menu.classList.remove("active");   // После нажития на ссылку закрывает меню 
-         btn.classList.toggle("active");    // После нажития переопределяет класс
-         html.classList.toggle("noscroll"); // После нажития переопределяет класс
-         icon.classList.toggle("active");   // После нажития переопределяет класс
-    } 
-  });
-});
 //==================================================================================
-

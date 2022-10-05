@@ -1,16 +1,16 @@
 .swiper-container {
+   position: relative;
+   padding-top: rem(30px);
+   padding-bottom: rem(0px);
    .swiper-wrapper {
       padding-bottom: 80px;
    }
    .swiper-lazy {
-      height: 177px;
+      height: 170px;
       display: flex;
       justify-content: center;
       align-items: flex-start;
    }
-   position: relative;
-   padding-top: rem(30px);
-   padding-bottom: rem(0px);
    .swiper-pagination{
       bottom: -110;
       z-index: 1;
@@ -25,6 +25,7 @@
       background-color: var(--color-green);
    }
 }
+
 .swiper-slide-active {
    .strategies__paragraf {
       color: var(--color-green);
