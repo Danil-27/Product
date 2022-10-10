@@ -11,7 +11,7 @@
       width: auto;
       padding: rem(28px) rem(28px) rem(24px) rem(28px) ;
       background-color: var(--color-white);
-      border: 1px solid #DEDEDE;
+      @extend .border;
       border-radius: 5px;
    }
    &_m {

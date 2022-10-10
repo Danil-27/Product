@@ -1,32 +1,36 @@
-const htmlTheme = document.querySelector(".light");
-const theme = document.querySelector(".theme");
-const themeBackround = document.querySelector(".theme__backround");
-const decor = document.querySelector(".theme__decor");
+const themeEl = document.querySelector(".theme");
+const htmlEl = document.documentElement;
+const theme = localStorage.getItem('theme')
+if (theme === 'light') {
+   htmlEl.classList.add(theme)
+   htmlEl.classList.remove('dark')
+   themeEl.classList.add(theme)
+   themeEl.classList.remove('dark')
+} else {
+   htmlEl.classList.add(theme)
+   htmlEl.classList.remove('light')
+   themeEl.classList.add(theme)
+   themeEl.classList.remove('light')
+}
 
 
-theme.addEventListener("click" , (e) => {
-   if (e.target.classList.contains("theme")) {
-      decor.classList.toggle("theme__decor");
-      decor.classList.toggle("decor");
-      htmlTheme.classList.toggle("light")
-      htmlTheme.classList.toggle("dark")
+themeEl.addEventListener("click" , (e) => {
+      if ( e.currentTarget.classList.contains('light')) {
+         e.currentTarget.classList.remove('light')
+         e.currentTarget.classList.add('dark')
+         htmlEl.classList.remove("light")
+         htmlEl.classList.add("dark")
+         localStorage.setItem('theme' , 'dark')
+      } else {
+         e.currentTarget.classList.add('light')
+         e.currentTarget.classList.remove('dark')
+         htmlEl.classList.add("light")
+         htmlEl.classList.remove("dark")
+         localStorage.setItem('theme' , 'light')
    }
-})
-
-themeBackround.addEventListener("click" , (e) => {
-   if (e.target.classList.contains("theme__backround")) {
-      decor.classList.toggle("theme__decor");
-      decor.classList.toggle("decor");
-      htmlTheme.classList.toggle("light")
-      htmlTheme.classList.toggle("dark")
-   }
-})
-
-decor.addEventListener("click" , () => {
-   decor.classList.toggle("theme__decor");
-   decor.classList.toggle("decor");
-   htmlTheme.classList.toggle("light")
-   htmlTheme.classList.toggle("dark")
 });
 
+
+
 // =====================================================
+

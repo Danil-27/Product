@@ -3,6 +3,7 @@
    left: 0;
    width: 100%;
 }
+
 .mb-2{
    margin-bottom: 1.6rem;
 }
@@ -10,10 +11,19 @@
 .is-block {
    display: block;
 }
+
 .is-uppercase {
    text-transform: uppercase;
 }
 
 .is-center {
    justify-content: center;
+}
+
+.border {
+   border: 1px solid var(--border-color);
+}
+
+.bg-light-dark {
+   background-color: var(--color-bg-L-D);
 }

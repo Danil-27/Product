@@ -1,0 +1,9 @@
+.exterprise {
+   @extend .bg-light-dark;
+   padding: rem(54px) 0 rem(50px) 0;
+   .button {
+      margin-top: rem(32px);
+      padding: rem(18px) rem(11px);
+      font-weight: 600;
+   }
+}

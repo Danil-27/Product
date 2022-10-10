@@ -28,10 +28,10 @@
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%) scale(0);
-   width: auto;
+   width: 80%;
    height: auto;
    overflow-y: auto;
-   padding: rem(15px);
+   padding: rem(35px);
    background: #fff;
    background-color: var(--color-bg-white);
    transition: 0.5s all;
@@ -68,7 +68,6 @@
    button {
       width: 100%;
       height: rem(45px);
-      margin-top: auto;
       color: #fff;
       font-size: rem(18px);
       border: rem(2px) solid var(--color-green);
@@ -145,11 +144,18 @@
    margin-bottom: rem(5px);
 }
 
+@media screen and (min-width:768px) {
+   .popup-1 , .popup-2 {
+      width: 70%;
+      height: auto;
+   }
+}
+
 @media screen and (min-width:992px) {
    .popup-1 , .popup-2 {
       width: rem(600px);
-      height: auto;
       padding: rem(45px);
+      width: auto;
    }
 }
 
