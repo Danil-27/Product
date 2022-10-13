@@ -48,7 +48,8 @@
    // customers 
    &_bg {
       @extend .bg-light-dark;
-      padding: rem(24px) 0 rem(70px) 0;
+      padding-top: rem(24px);
+      padding-bottom: rem(70px);
    }
    &_centered {
       .for-you__item {

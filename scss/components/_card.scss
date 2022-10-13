@@ -40,10 +40,11 @@
       margin-bottom: rem(16px);
    }
    &__unit {
-      font-size: rem(25px);
+      font-size: rem(30px);
       margin-bottom: rem(4px);
       line-height: 1;
-      
+      font-weight: 600;
+      color: var(--color-green);
    }
    &__time {
       color: var(--color-month);
@@ -65,7 +66,7 @@
 
 .card:hover {
    background-color: var(--color-green);
-   .card__cost , .card__unit , .card__subtitle , .card__services , .card__additionally {
+   .card__time ,.card__cost , .card__unit , .card__subtitle , .card__services , .card__additionally {
       color: var( --color-white);
    }
    .card__button{

@@ -1,0 +1,54 @@
+.ticket {
+   &_bg {
+      @extend .bg-light-dark ;
+      padding-top: rem(35px);
+      padding-bottom: rem(45px);
+   }
+   &__wrapper {
+      margin-bottom: rem(65px);
+   }
+   .title {
+      text-align: center;
+   } 
+   &_title {
+      margin-bottom: rem(90px);
+   }
+   &__heading{
+      text-align: center;
+      .title {
+         font-weight: 500;
+         margin-bottom: rem(16px);
+      }
+      .subtitle , .title  {
+         color: var(--color-text-dark);
+      }
+   }
+   &__text {
+      margin-bottom: rem(12px);
+      color: var(--color-text-black);
+   }
+   &__img {
+      width: rem(150px);
+      height: rem(150px);
+      border-radius: 50%;
+      margin: 0 auto;
+      margin-bottom: rem(25px);
+      background-repeat: no-repeat;
+      background-position: center;
+      &_red {
+         background-color: #f03d3d1a;
+         background-image: url("../../imeges/customers/Activity-1.svg");
+      }
+      &_blue {
+         background-color: #11b6e40e;
+         background-image: url("../../imeges/customers/Chart.svg");
+      }
+   }
+}
+@media screen and (min-width:576px) {
+   .ticket {
+      &__wrapper {
+         margin-bottom: 0;
+      }
+   }
+}

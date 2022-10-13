@@ -55,6 +55,32 @@
    }
 }
 
+[data-theme="light"] {
+   .section_bg-b {
+      &::after {
+         background:  linear-gradient(179.59deg,rgba(255, 255, 255, 0.0001) 0.35%, #EDEDED  99.63%);
+      }
+   }
+   .section_bg-t {
+      &::after {
+         background: linear-gradient(179.59deg, #EDEDED 0.35%, rgba(255, 255, 255, 0.0001) 99.63%);
+      }
+   }
+}
+
+[data-theme="dark"]  {
+   .section_bg-b{
+      &::after {
+         background: linear-gradient(179.59deg,rgba(67, 67, 67, 0.0001)  0.35%, #22343D  99.63%);
+      }
+   }
+   .section_bg-t {
+      &::after {
+         background: linear-gradient(179.59deg, #22343D 0.35%, rgba(67, 67, 67, 0.0001) 99.63%);
+      }
+   }
+}
+
 @media screen and (min-width:575px) {
    .section {
       &_bg-t , &_bg-b {

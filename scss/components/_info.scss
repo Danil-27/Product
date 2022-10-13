@@ -18,8 +18,7 @@
          background-image: url("/imeges/infarmation/two.svg");
       }
       &_three {
-         background-image: url("/imeges/infarmation/three.svg");
-         
+         background-image: url("/imeges/infarmation/three.svg"); 
       }
    }
    &__header {
@@ -77,17 +76,14 @@
       }
    }
 }
-
-
 @media screen and (min-width:768px) {
    .info {
       &__picture {
          align-items: center;
          margin-bottom: 0;
-         &_order {
+         &_order-1 , &_order-3 {
             order: 1;
          }
-         
       }
    }
 }
@@ -97,7 +93,7 @@
          justify-content: center;
          width: 500px;
          height: auto;
-         &_order {
+         &_order-1 , &_order-3  {
             justify-content: flex-end;
          }
       }
@@ -117,3 +113,58 @@
       }
    }
 }
+
+// customents
+.info_customers {
+   .info__picture_order-1 , .info__picture_order-3 {
+      justify-content: center;
+   }
+   .info__img {
+      width: rem(500px);
+      height: rem(280px);
+      &_one {
+         background-image: url("/imeges/customers/info-1.svg");
+      }
+      &_two {
+         background-image: url("/imeges/customers/info-2.svg");
+      }
+      &_three {
+         background-image: url("/imeges/customers/info-3.svg"); 
+      }
+   }
+   .subtitle {
+      margin-bottom: rem(16px);
+   }
+   .info__button{
+      display: flex;
+      justify-content: center;
+   }
+   .button {
+      padding: rem(11px) rem(18px);
+      font-weight: 600;
+      font-size: rem(18px);
+      margin-top: rem(75px);
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+@media screen and (min-width:768px) {
+   .info_customers {
+      .info__picture_order-1 , .info__picture_order-3 {
+         order: 0;
+      }
+      .info__picture_order-2 {
+         order: 1;
+      }
+   }
+}
+
+@media screen and (min-width:992px) {
+   .info_customers {
+      .info__picture_order-1 , .info__picture_order-3 {
+         justify-content: flex-start;
+      }
+   }
+}
+

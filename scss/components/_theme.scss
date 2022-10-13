@@ -26,13 +26,14 @@
       margin-left: auto;
       border-radius: 0 100% 100% 0 / 0 50% 50% 0;
    }
-   // Меняет сторону декора при клике на темную тему
-   &.dark {
-      .theme__semicircle { 
-         margin-left: 0;
-         margin-right: auto;
-         border-radius: 100% 0 0 100% / 50% 0 0 50%;
-      }
+}
+
+// Меняет сторону декора при клике на темную тему
+[data-theme="dark"] {
+   .theme__semicircle { 
+      margin-left: 0;
+      margin-right: auto;
+      border-radius: 100% 0 0 100% / 50% 0 0 50%;
    }
 }
 

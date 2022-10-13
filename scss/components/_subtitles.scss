@@ -1,28 +1,7 @@
 .subtitle {
    font-weight: 500;
    color: var(--color-text-black);
-   // margin-bottom: rem(8px);
-//    &_process , &_clients , &_price {
-//    text-align: center;
-// }
-//    &_process , &_clients {
-//       margin-left: auto;
-//       margin-right: auto;
-//    }
-//    &_strategies , &_clients  {
-//       font-weight: 500;
-//    }
-//    &_process {
-//       max-width: rem(542px);
-//       margin-top: rem(16px);
-//    }
-//    &_strategies {
-//    }
-//    &_price {
-//       margin-bottom: rem(75px);
-//    }
-//    &_clients {
-//       max-width: rem(537px);
-//       margin-bottom: rem(50px);
-//    }
+   &_xxs {
+      font-size: rem(20px);
+   }
 }
