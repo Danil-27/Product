@@ -27,3 +27,39 @@
       }
    }     
 }
+
+//resourse
+.content_resources {
+   .illustration {
+      &__img {
+         // width: rem(400px);
+         // max-width: rem(400px);
+         max-width: 100%;
+         background-image: url("/imeges/resources/Group\ 1422.svg");
+         background-size: contain;
+      }
+   }
+}
+
+@media screen and (min-width:768px) {
+   .content_resources {
+      .illustration {
+         justify-content: flex-end;
+         width: 100%;
+         order: 2;
+      }
+   }
+}
+@media screen and (min-width:992px) {
+   .content_resources {
+      .illustration {
+         max-width: rem(590px);
+         height: rem(510px);
+         &__img {
+            width: 100%;
+            height: 100%;
+            background-image: url("/imeges/resources/Group\ 1452.svg");
+         }
+      }     
+   }
+}

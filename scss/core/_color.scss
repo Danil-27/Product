@@ -1,6 +1,7 @@
 //const
 :root {
    --color-white: #fff;
+   --color-white-2: #eaeaea;
    --color-black: #000;
    --color-border-sign-un: #BCD0E5;
    --color-green: #02897A;
@@ -29,6 +30,8 @@
    --color-swiper-pagination-bullet: #000;
    // customers
    --color-bg-L-D:#F5F5F5;
+   //pricing
+
 }
 
 [data-theme="dark"] {
@@ -49,4 +52,6 @@
    --color-swiper-pagination-bullet: #fff;
    // customers
    --color-bg-L-D: #22343D;
+    //pricing
+
 }

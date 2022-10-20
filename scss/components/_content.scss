@@ -3,7 +3,7 @@
       margin-top: rem(10px);
    }
    &__text {
-      max-width: 300px;
+      max-width: rem(300px);
       margin: 0 auto;
       text-align: center;
       margin-top: rem(16px);
@@ -24,7 +24,12 @@
          margin-right: rem(8px);
       }
    }
+   .button {
+      padding: rem(15px) rem(25px);
+      margin-right: rem(28px);
+   }
 }
+
 @media screen and (max-width:360px) {
    .content {
       &__link-video {
@@ -32,13 +37,17 @@
          justify-content: center;
          margin-top: rem(12px);
       }
+      .button {
+         justify-content: center;
+         margin-right: rem(0px);
+      }
    }
 } 
 
 @media screen and (min-width:768px) { 
    .content {
       &__text {
-         max-width: rem(400px);
+         max-width: 100%;
          margin: 0;
          text-align: start;
       }
@@ -47,5 +56,62 @@
          justify-content: flex-start;
          margin-top: rem(30px);
       }
+   }
+}
+
+
+.content_resources {
+   .content {
+      &__source {
+         display: block;
+      }
+   }
+}
+
+.form__mail{
+   display: flex;
+   width: 100%;
+   .text{
+      
+   }
+   .form__skin ,.input {
+      background: rgba(255, 0, 0, 0.0);
+      border:  1px solid var(--color-white-2);
+      border-top-color: var(--color-white-2);
+      border-bottom-color: var(--color-white-2);
+   }
+   .input{
+      // display: inline-block;
+      width: 100%;
+      padding: rem(25px) rem(0px) rem(25px) rem(22px);
+      color: var(--color-text-dark);
+      border-left-color: var(--color-white-2);
+      border-right-color:  transparent;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+      font-size: rem(20px);
+      &:focus {
+         background-color: transparent;
+      }
+   } 
+   .form__skin {
+      padding: rem(25px)  rem(125px) rem(25px) rem(22px);
+      border-left-color: transparent;
+      border-right-color:var(--color-white-2);
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+      margin-left: -2px ;
+      position: relative;
+   }
+   .button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 8px;
+      border-radius: 100px;
+      border-radius: 100px;
+      font-weight: 600;
+      margin: 0;
+      padding: rem(15px) rem(25px);
    }
 }

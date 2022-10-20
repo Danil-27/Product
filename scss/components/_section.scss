@@ -1,5 +1,8 @@
 .section {
    margin-bottom: rem(100px);
+   &_bg {
+      @extend .bg-light-dark;
+   }
    &__heading {
       text-align: center;
       margin-bottom: rem(50px);
@@ -24,7 +27,20 @@
          margin-bottom: rem(24px);
       }
    }
-
+   &_for-you {
+      &.section_bg {
+         padding-top: rem(24px);
+         padding-bottom: rem(38px);
+      }
+      .for-you {
+         @extend .m-b;
+      }
+   }
+   &_stories {
+      .strategies {
+         @extend .m-b;
+      }
+   }
    //section for-you и process 
    &_bg-t , &_bg-b {
       width: 100%;
@@ -51,6 +67,23 @@
       padding-top: rem(40px);
       &::after {
          border-radius: 50% 50% 0 0;
+      }
+   }
+   &_company {
+      margin-bottom: rem(60px);
+      .company {
+         margin-top: rem(80px);
+      }
+      .company__img {
+         margin-bottom: rem(60px);
+      }
+   }
+   &_ticket {
+      text-align: center;
+      padding-top: rem(35px);
+      padding-bottom: rem(45px);
+      .ticket__wrapper{
+         margin-bottom: rem(65px);
       }
    }
 }
@@ -86,6 +119,15 @@
       &_bg-t , &_bg-b {
          &::after {
             width: 170%;
+         }
+      }
+   }
+}
+@media screen and (min-width:576px) {
+   .section {
+      &_ticket {
+         .ticket__wrapper{
+            margin-bottom: 0px;
          }
       }
    }

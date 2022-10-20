@@ -59,27 +59,27 @@
          margin-bottom: rem(16px);
       }
    }
-   &__button {
+   .button {
       transition: all .2s;
+      font-weight: 500;
+      padding: rem(10px) rem(18px);
    }
-}
-
-.card:hover {
-   background-color: var(--color-green);
-   .card__time ,.card__cost , .card__unit , .card__subtitle , .card__services , .card__additionally {
-      color: var( --color-white);
+   &:hover {
+      background-color: var(--color-green);
+      .card__time ,.card__cost , .card__unit , .card__subtitle , .card__services , .card__additionally {
+         color: var( --color-white);
+      }
+      .button{
+         background-color: var( --color-white);
+         color: var(--color-black);
+      }
    }
-   .card__button{
-      background-color: var( --color-white);
-      color: var(--color-black);
+   .button:hover {
+      border: 1px solid #30444E;
+      box-shadow: 0px 2px 0 #30444E, 2px 4px 6px #30444E;
+      -webkit-transition: all 150ms linear;
+      transition: all 150ms linear;
    }
-}
-.card__button:hover{
-   background: #30444E;
-   border: 1px solid #30444E;
-   box-shadow: 0px 2px 0 #30444E, 2px 4px 6px #30444E;
-   -webkit-transition: all 150ms linear;
-   transition: all 150ms linear;
 }
 
 @media screen and (min-width:992) {

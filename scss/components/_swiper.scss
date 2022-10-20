@@ -2,14 +2,10 @@
    position: relative;
    padding-top: rem(30px);
    padding-bottom: rem(0px);
-   .swiper-wrapper {
-      padding-bottom: 80px;
+   .swiper-slide {
    }
-   .swiper-lazy {
-      height: 170px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
+   .swiper-wrapper {
+      // padding-bottom: 80px;
    }
    .swiper-pagination{
       bottom: -110;
@@ -30,6 +26,12 @@
    .strategies__paragraf {
       color: var(--color-green);
    }
+   .history__paragraf {
+      color: var(--color-green);
+   }
+}
+.swiper-lazy {
+   // height: 50% ;
 }
 
 .swiper-lazy-preloader {

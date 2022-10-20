@@ -1,4 +1,5 @@
 .info {
+   
    &__picture {
       display: flex;
       justify-content: center;
@@ -29,7 +30,7 @@
       margin-bottom: rem(12px);
    }
    &__paragraf {
-      max-width: rem(486px);
+      // max-width: rem(486px);
       &_one {
          margin-bottom: rem(30px);
       }
@@ -69,13 +70,8 @@
          background-color: #4D8DFF;
       }
    }
-   &__text {
-      max-width: rem(380px);
-      &_l{
-         max-width: rem(350px);
-      }
-   }
 }
+
 @media screen and (min-width:768px) {
    .info {
       &__picture {
@@ -87,6 +83,7 @@
       }
    }
 }
+
 @media screen and (min-width:992px) {
    .info {
       &__picture {
@@ -135,7 +132,7 @@
    .subtitle {
       margin-bottom: rem(16px);
    }
-   .info__button{
+   .info__button {
       display: flex;
       justify-content: center;
    }
@@ -168,3 +165,48 @@
    }
 }
 
+// Pricing
+.info_pricing {
+   .title {
+      font-weight: 600;
+   }
+   .info__img {
+      width: rem(352px);
+      height: rem(288px);
+      &_two {
+         background-image: url("/imeges/pricing/pipke_xs.svg");
+      }
+   }
+   .info__tick {
+      background-color: #F4F5F7;
+      width: rem(50px);
+      height: rem(50px);
+      border-radius: 50%;
+      margin-right: rem(15px);
+      img {
+         width: 24px;
+         height: 24px;
+      }
+   }
+   .info__item {
+      display: flex;
+      align-items: center;
+      margin-bottom: rem(16px);
+   }
+   .info__text:not(:last-child) {
+      margin-bottom: rem(32px);
+   }
+}
+
+
+@media screen and (min-width:768px) {
+   .info_pricing {
+      .info__img {
+         width: rem(530px);
+         height: rem(400px);
+         &_two {
+            background-image: url("/imeges/pricing/amico.svg");
+         }
+      }
+   }
+}

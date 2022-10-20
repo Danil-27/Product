@@ -73,9 +73,10 @@
             right: rem(21px);
          }
       }
-      &__button  {
-         padding: rem(15px) rem(30px);
-      }
+   }
+   .button  {
+      margin-top: rem(50px);
+      padding: rem(15px) rem(30px);
    }
 }
 

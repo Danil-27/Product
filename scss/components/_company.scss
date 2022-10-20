@@ -1,33 +1,10 @@
 .company {
-   padding-top: rem(80px);
    &__img {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: rem(50px);
       img {
          height: 50px;
-      }
-   }
-}
-@media screen and (min-width:576px) {
-   .company {
-      padding-top: rem(80px);
-      &__img {
-         &_m {
-            margin-bottom: rem(50px);
-         }
-      }
-   }
-}
-
-@media screen and (min-width:992px) {
-   .company {
-      &__img {
-         margin-bottom: 0;
-         &_m {
-            margin-bottom: 0;
-         }
       }
    }
 }

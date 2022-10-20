@@ -46,11 +46,6 @@
       margin-top: rem(8px);
    }
    // customers 
-   &_bg {
-      @extend .bg-light-dark;
-      padding-top: rem(24px);
-      padding-bottom: rem(70px);
-   }
    &_centered {
       .for-you__item {
          padding: 32px 28px 34px 28px;
@@ -61,6 +56,11 @@
       .for-you__icon {
          margin: auto;
       }
+   }
+}
+.for-you_b {
+   .button {
+      padding: rem(15px) rem(34px);
    }
 }
 

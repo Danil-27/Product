@@ -1,20 +1,8 @@
 .ticket {
-   &_bg {
-      @extend .bg-light-dark ;
-      padding-top: rem(35px);
-      padding-bottom: rem(45px);
-   }
-   &__wrapper {
-      margin-bottom: rem(65px);
-   }
-   .title {
-      text-align: center;
-   } 
    &_title {
       margin-bottom: rem(90px);
    }
    &__heading{
-      text-align: center;
       .title {
          font-weight: 500;
          margin-bottom: rem(16px);
@@ -42,13 +30,6 @@
       &_blue {
          background-color: #11b6e40e;
          background-image: url("../../imeges/customers/Chart.svg");
-      }
-   }
-}
-@media screen and (min-width:576px) {
-   .ticket {
-      &__wrapper {
-         margin-bottom: 0;
       }
    }
 }
