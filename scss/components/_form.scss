@@ -1,0 +1,35 @@
+.form {
+   padding: rem(15px);
+   background-color: var(--color-form);
+   .title {
+      margin-bottom: rem(45px);
+   }
+   input, textarea {
+      display: block;
+      width: 100%;
+      background: #F5F5F5;
+      border: rem(1px) solid #E8E8E8;
+      padding: rem(19px) rem(20px);
+      margin-bottom: rem(45px);
+   }
+   input {
+      border-radius: rem(39px);
+   }
+   textarea {
+      height: rem(190px);
+   }
+   .button {
+      padding: rem(18px) rem(54px);
+      border-radius: 35px;
+   }
+}
+
+
+@media screen and (min-width:992px) {
+   .form {
+      padding: rem(50px);
+      background-color: var(--color-form);
+      border: 1px solid var(--color-border);
+      border-radius: 20px;
+   }
+}

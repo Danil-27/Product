@@ -65,51 +65,66 @@
       &__source {
          display: block;
       }
+      &__shell {
+         display: flex;
+         align-items: center;
+         margin-top: rem(20px);
+      }
+      &__people {
+         width: 100%;
+         height: 100%;
+         background-image: url("/imeges/resources/img.svg");
+      }
+      &__other {
+         margin-left: 10px;
+         color: var(--color-text-dark);
+         span {
+            color: var(--color-green);
+         }
+      }
    }
 }
 
-.form__mail{
+.content__mail{
    display: flex;
    width: 100%;
-   .text{
-      
-   }
-   .form__skin ,.input {
+   .content__skin ,.input {
       background: rgba(255, 0, 0, 0.0);
-      border:  1px solid var(--color-white-2);
+      border:  rem(1px) solid var(--color-white-2);
       border-top-color: var(--color-white-2);
       border-bottom-color: var(--color-white-2);
    }
    .input{
-      // display: inline-block;
       width: 100%;
       padding: rem(25px) rem(0px) rem(25px) rem(22px);
       color: var(--color-text-dark);
       border-left-color: var(--color-white-2);
       border-right-color:  transparent;
-      border-top-left-radius: 100px;
-      border-bottom-left-radius: 100px;
+      border-top-left-radius: rem(100px);
+      border-bottom-left-radius: rem(100px);
       font-size: rem(20px);
+      
       &:focus {
          background-color: transparent;
+   
       }
    } 
-   .form__skin {
+   .content__skin {
       padding: rem(25px)  rem(125px) rem(25px) rem(22px);
       border-left-color: transparent;
       border-right-color:var(--color-white-2);
-      border-top-right-radius: 100px;
-      border-bottom-right-radius: 100px;
-      margin-left: -2px ;
+      border-top-right-radius: rem(100px);
+      border-bottom-right-radius: rem(100px);
+      margin-left: rem(-2px) ;
       position: relative;
    }
    .button {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      right: 8px;
-      border-radius: 100px;
-      border-radius: 100px;
+      right: rem(8px);
+      border-radius: rem(100px);
+      border-radius: rem(100px);
       font-weight: 600;
       margin: 0;
       padding: rem(15px) rem(25px);

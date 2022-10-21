@@ -1,4 +1,4 @@
-new Swiper('.strategies__swiper',{
+new Swiper('.strategies__container ',{
    breakpoints: {
       1: {
          slidesPerView: 1,
@@ -17,7 +17,7 @@ new Swiper('.strategies__swiper',{
       },
    },
    pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-paginations',
       //булеты
       clickable: true,
    },

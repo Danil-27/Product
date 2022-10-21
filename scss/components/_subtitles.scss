@@ -8,3 +8,12 @@
       font-size: rem(18px);
    }
 }
+
+
+@media screen and (max-width:992px) {
+   .subtitle {
+      .is-block {
+         display: inline;
+      }
+   }
+}

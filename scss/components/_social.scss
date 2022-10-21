@@ -1,0 +1,30 @@
+.social {
+   &__wrapper {
+      display: flex;
+      justify-content: center;
+      a {
+         display: inline-block;
+         background-repeat: no-repeat;
+         background-position: center;
+         width: rem(40px);
+         height: rem(40px);
+         border-radius: 50%;
+         background-color: #EDFFFC; 
+         transition: all .6s;
+         &:hover {
+            background-color: #bbe6df; 
+         }
+      }
+   }
+   &__instagram {
+      background-image: url("/imeges/footer/instagram.svg");
+      margin-right: rem(16px);
+   }
+   &__facebook {
+      background-image: url("/imeges/footer/facebook.svg");
+   }
+   &__martin {
+      margin-left: rem(16px);
+      background-image: url("/imeges/footer/Vector.svg");
+   }
+}
