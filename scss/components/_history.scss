@@ -6,13 +6,15 @@
    }
    &__main {
       border-radius: 10px;
-      border: solid 1px  var(--color-white);
+      border: solid 1px  var(--border-color-history);
       background-color: var(--color-white);
       position: relative;
    }
    &__main img {
       width: 100%;
       text-align: center;
+      border-top-left-radius: rem(8px);
+      border-top-right-radius: rem(8px);
    }
    &__header {
       padding: rem(24px) rem(24px) rem(40px) rem(24px);

@@ -31,3 +31,16 @@
 .m-b {
    margin-bottom: rem(32px);
 }
+
+.is-visually-hidden {
+   position: absolute;
+   width: rem(1px);
+   height: rem(1px);
+   margin: rem(-1px);
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+ }

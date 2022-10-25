@@ -1,5 +1,4 @@
 .info {
-   
    &__picture {
       display: flex;
       justify-content: center;
@@ -30,7 +29,6 @@
       margin-bottom: rem(12px);
    }
    &__paragraf {
-      // max-width: rem(486px);
       &_one {
          margin-bottom: rem(30px);
       }
@@ -197,7 +195,6 @@
       margin-bottom: rem(32px);
    }
 }
-
 
 @media screen and (min-width:768px) {
    .info_pricing {

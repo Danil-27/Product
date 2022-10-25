@@ -8,11 +8,9 @@
    opacity: 0;
    pointer-events: none;
    transition: 0.5s all;
-
    z-index: 100;
    overflow-y: auto;
    overflow-x: hidden;
-
 }
 
 .popup__bg-1.active , .popup__bg-2.active{
@@ -20,8 +18,6 @@
    pointer-events: all;
    transition: 0.5s all;
 }
-
-
 
 .popup-1 , .popup-2 {
    position: absolute;

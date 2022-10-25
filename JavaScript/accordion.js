@@ -10,7 +10,6 @@ accordion.addEventListener('click', function(e) {
     var content = trigger.nextElementSibling;
       let triggerSteit  = trigger.dataset.toggle === 'collapse' ? 'show' : 'collapse'
       trigger.dataset.toggle = triggerSteit
-      
     if (triggerSteit !== 'show') {
       content.style.height = null;
     } else {

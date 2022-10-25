@@ -5,21 +5,29 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/imeges/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imeges/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imeges/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/imeges/Favicon/site.webmanifest">
+    <link rel="mask-icon" href="/imeges/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
    <!-- SEO -->
-   <meta name="description" content="" />
+   <meta name="description" content="">
    <!-- Title -->
    <title>Product</title>
    <!-- Styles -->
    <link rel="stylesheet" href="/css/styles.css">
    <!-- Js -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 </head>
 
 <body>
    <header class="header is-fixed">
       <div class="header__container container">
          <a class="logo" href="/index.html">
-            <img class="logo__img" src="imeges/Header/Main-icon.svg" alt="">
+            <img class="logo__img" src="imeges/Header/Main-icon.svg" alt="Упс пусто">
             <span class="logo__text">Product</span>
          </a>
          <div class="menu">
@@ -38,11 +46,11 @@
                </ul>
             </nav>
          </div>
-         <i class="theme icon light">
+         <div class="theme icon light">
             <div class="theme__backround">
                <div class="theme__semicircle"></div>
             </div>
-         </i>
+         </div>
          <div class="burger">
             <span></span>
          </div>
@@ -50,6 +58,7 @@
    </header>
    <main class="page">
       <section class="section section_price  container">
+         <h1 class="is-visually-hidden">the product offers a standard price plan, but we also have an individual approach to each of you</h1>
          <div class="section__heading">
             <h2 class="title title_xs is-uppercase">pricing</h2>
             <h2 class="title title_lg">Let’s get some real work done here.</h2>
@@ -162,7 +171,7 @@
             <div id="accordion" class="accordion col-lg-10">
                <ul class="accordion__list">
                   <li class="accordion__item">
-                     <button data-toggle="collapse" type="button" class="accordion__trigger subtitle subtitle_small"><div  class="accordion__decor"></div>What are my payment option?</button>
+                     <button data-toggle="collapse" type="button" class="accordion__trigger subtitle subtitle_small"><span  class="accordion__decor"></span>What are my payment option?</button>
                      <div class="accordion__content">
                         <div class="accordion__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla,
                            obcaecati a quidem quasi, deserunt quos quis quia harum. Nulla, obcaecati a quidem quasi,
@@ -171,20 +180,20 @@
                      </div>
                   </li>
                   <li class="accordion__item">
-                     <button data-toggle="collapse" type="button" class="accordion__trigger subtitle subtitle_small"><div class="accordion__decor"></div>How can I invite collaborator to platform?</button>
+                     <button data-toggle="collapse" type="button" class="accordion__trigger subtitle subtitle_small"><span class="accordion__decor"></span>How can I invite collaborator to platform?</button>
                      <div class="accordion__content">
                         <div class="accordion__text">After creating your account you will have an oppurtunity to create your first project that will be associated withthe collaborators e-mail. An invitation  will be sent automatically. Then, invited user will have to confirm his account by e-mail and finish userd onboarding.</div>
                      </div>
                   </li>
                   <li class="accordion__item">
-                     <button data-toggle="collapse" type="button" class="accordion__trigger subtitle subtitle_small"><div class="accordion__decor"></div>Can I upgrade my plan?</button>
+                     <button data-toggle="collapse" type="button" class="accordion__trigger subtitle subtitle_small"><span class="accordion__decor"></span>Can I upgrade my plan?</button>
                      <div class="accordion__content">
                         <div class="accordion__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla,
                            obcaecati a quidem quasi, deserunt quos quis quia harum.</div>
                      </div>
                   </li>
                   <li class="accordion__item">
-                     <button data-toggle="collapse" type="button" class="accordion__trigger subtitle subtitle_small">Can I cancel my plan at anytime?<div class="accordion__decor"></div></button>
+                     <button data-toggle="collapse" type="button" class="accordion__trigger subtitle subtitle_small"><span class="accordion__decor"></span>Can I cancel my plan at anytime?</button>
                      <div class="accordion__content">
                         <div class="accordion__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla,
                            obcaecati a quidem quasi, deserunt quos quis quia harum.</div>
@@ -198,7 +207,7 @@
          <div class="footer__row row row-lg-between">
             <div class="footer__item footer_icon col col-lg-3">
                <div class="footer__product">
-                  <div class="footer-box-img"><img src="/imeges/footer/Product.svg" alt=""><span>Product</span></div>
+                  <div class="footer-box-img"><img src="/imeges/footer/Product.svg" alt="Упс пусто"><span>Product</span></div>
                </div>
                <div class="footer__wrapper">
                   <a href="#" class="footer__instagram"></a>
@@ -237,20 +246,19 @@
          </svg>
          <label class="table">
             <input class="input" type="email" name="email">
-            <div class="label__text">
+            <span class="label__text">
                Email or phone
-            </div>
+            </span>
          </label>
          <label class="table">
             <input class="input" type="password" name="password">
-            <div class="label__text">
+            <span class="label__text">
                password
-            </div>
+            </span>
          </label>
          <div class="checkbox">
             <input class="checkbox__input checkbox__input_none" type="checkbox" id="agreement" name="agreement">
-            <label class="checkbox__tabel" for="agreement">This information will be used to find your account in the
-               game.</label>
+            <label class="checkbox__tabel" for="agreement">This information will be used to find your account in the game.</label>
          </div>
          <button type="submit">inlet</button>
       </form>
@@ -263,15 +271,15 @@
          </svg>
          <label class="table">
             <input class="input" type="email" name="email">
-            <div class="label__text">
+            <span class="label__text">
                Email or phone
-            </div>
+            </span>
          </label>
          <label class="table">
             <input class="input" type="password" name="password">
-            <div class="label__text">
+            <span class="label__text">
                password
-            </div>
+            </span>
          </label>
          <div class="checkbox">
             <input class="checkbox__input" type="checkbox" id="register" name="agreement">
@@ -281,12 +289,12 @@
          <button type="submit">register</button>
       </form>
    </div>
+   <script src="JavaScript/index.js"></script>
+   <script src="JavaScript/theme.js"></script>
+   <script src="JavaScript/popup.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="JavaScript/swiper.js"></script>
+   <script src="JavaScript/accordion.js"></script>
 </body>
-<script src="JavaScript/index.js"></script>
-<script src="JavaScript/theme.js"></script>
-<script src="JavaScript/popup.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="JavaScript/swiper.js"></script>
-<script src="JavaScript/accordion.js"></script>
 
 </html>

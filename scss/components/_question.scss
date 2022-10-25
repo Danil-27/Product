@@ -1,14 +1,9 @@
-.question {
-   // color: var( --color-text-black);
-}
-
-
  .accordion {
-   // width: 400px;
    &__item {
       border-bottom: 1px solid #474747;
    }
  }
+
  .accordion__list {
    list-style: none;
  }
@@ -36,8 +31,6 @@
       }
       //~ ближайший сосед 
       ~.accordion__content {
-         // overflow: hidden;
-         // height: auto;
          transition: all 1s linear;
       } 
    }
@@ -76,7 +69,6 @@
    outline: none;
  }
 
- 
  .accordion__content {
    width: 100%;
    overflow: hidden;

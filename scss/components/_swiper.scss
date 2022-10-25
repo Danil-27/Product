@@ -1,24 +1,15 @@
 .swiper-container {
-//    position: relative;
-//    padding-top: rem(30px);
-//    padding-bottom: rem(0px);
-//    .swiper-pagination{
-//       bottom: -110;
-//       z-index: 1;
-//    }
    .swiper-pagination-bullet{
       width: rem(16px);
       height: rem(16px);
       font-size: rem(14px);
-      background-color: var(--color-swiper-pagination-bullet);
+      background-color: var(--color-text-dark);
    }
    .swiper-pagination-bullet-active {
       background-color: var(--color-green);
    }
 }
 
-.swiper-pagination {
-}
 //буллет по центру 
 .swiper-paginations.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
    text-align: center;
@@ -26,23 +17,6 @@
 
 }
 
-// .swiper-slide-active {
-//    .strategies__paragraf {
-//       color: var(--color-green);
-//    }
-//    .history__paragraf {
-//       color: var(--color-green);
-//    }
-// }
-
-// .swiper-lazy-preloader {
-//    top: 25% !important;
-//    animation: spin 2s linear infinite !important;
-// }
-
-// @keyframes spin {
-//    0% { transform: rotate(0deg); }
-//    100% { transform: rotate(360deg); }
-// }
-
-
+.swiper-lazy-preloader {
+   top: rem(45px) !important;
+}

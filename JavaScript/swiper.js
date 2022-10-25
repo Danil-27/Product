@@ -39,6 +39,10 @@ new Swiper('.strategies__container ',{
       //Подгружает предыдущие и следующие картинки
       loadPrevNext: false,
    },
+   //Слежка за видимыми слайдами 
+   watchSlidesProgress: true,
+   //Добавление класса видимым слайдам 
+   watchSlidesVisibility: true,
    //Быстрее пролистывает слайдеры
    touchRatio: 2,
    // Декоративный курсор

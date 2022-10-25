@@ -63,7 +63,7 @@
 .content_resources {
    .content {
       &__source {
-         display: block;
+         display: flex;
       }
       &__shell {
          display: flex;
@@ -94,8 +94,11 @@
       border-top-color: var(--color-white-2);
       border-bottom-color: var(--color-white-2);
    }
+   form {
+      width: 100% ;
+   }
    .input{
-      width: 100%;
+      width: 100% ;
       padding: rem(25px) rem(0px) rem(25px) rem(22px);
       color: var(--color-text-dark);
       border-left-color: var(--color-white-2);
@@ -106,7 +109,6 @@
       
       &:focus {
          background-color: transparent;
-   
       }
    } 
    .content__skin {

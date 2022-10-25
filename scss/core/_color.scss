@@ -8,8 +8,7 @@
    --color-standart: #22343D;
    --color-month: #AFAFAF;
    --color-hover: #10a897;
-
-   --border-color: #dedede; // ддля фор и стратегис 
+   --border-color: #dedede; 
 }
 
 [data-theme="light"] {
@@ -21,19 +20,16 @@
    //Элементы header
    --color-logo: #173A56;
    --color-menu-active: rgba(255, 255, 255, 0.6);
-   --color-menu-body: #fff;
-   --color-menu-992: #fff;
    --color-link-hover-1: transparent;
    --color-link-hover-2: transparent;
    --color-link-hover-3: transparent;
-   //swiper
-   --color-swiper-pagination-bullet: #000;
    // customers
    --color-bg-L-D:#F5F5F5;
    //resources
    --color-form: #fff;
    --color-border:#DDDDDD;
-
+   //history
+   --border-color-history: #dedede;
 }
 
 [data-theme="dark"] {
@@ -45,17 +41,14 @@
    //Элементы header
    --color-menu-active: rgba(0, 0, 0, 0.6);
    --color-logo: #fff;
-   --color-menu-body: #1F2E35;
-   --color-menu-992: #1F2E35;
    --color-link-hover-1:rgb(243, 241, 241);
    --color-link-hover-2:#02897A;
    --color-link-hover-3:#02897A;
-   //swiper
-   --color-swiper-pagination-bullet: #fff;
    // customers
    --color-bg-L-D: #22343D;
    //resources
    --color-form: #22343D;
    --color-border:#464646;
-
+   //history
+   --border-color-history: #fff;
 }

@@ -30,7 +30,7 @@ window.addEventListener("resize", debounce(handlerResize, 500));
 
 html.addEventListener("click", () => {
    if (width < 992) {
-      // html.classList.remove("noscroll");  
+      html.classList.remove("noscroll");  
    }
 });
 
