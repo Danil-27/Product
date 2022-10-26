@@ -1,20 +1,19 @@
-var accordion = document.getElementById('accordion');
+const buttons = document.querySelectorAll('[data-toggle]')
 
-var i;
-
-accordion.addEventListener('click', function(e) {
-//   console.log("e.target");
-//   console.log(e.target);
-  if (e.target.classList.contains('accordion__trigger') ) {
-    var trigger = e.target;
-    var content = trigger.nextElementSibling;
-      let triggerSteit  = trigger.dataset.toggle === 'collapse' ? 'show' : 'collapse'
-      trigger.dataset.toggle = triggerSteit
-    if (triggerSteit !== 'show') {
-      content.style.height = null;
+buttons.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    const btn = e.currentTarget
+    const content = btn.nextElementSibling
+    let state = btn.dataset.toggle === 'show' ? 'collapsed' : 'show'
+    btn.dataset.toggle = state
+    if (state === 'show') {
+      requestAnimationFrame(() => {
+        content.style.height = `${content.scrollHeight}px`
+      })
     } else {
-      content.style.height = content.scrollHeight + 'px';      
+      requestAnimationFrame(() => {
+         content.style.height = ''
+      })
     }
-  }
-
-});
+  })
+})

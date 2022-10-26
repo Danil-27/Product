@@ -1,9 +1,9 @@
 const btn = document.querySelector('.burger');
 const menu = document.querySelector('.menu');
-const html = document.querySelector('#html__noscroll');
-const links = menu.querySelectorAll(".menu__link");
-const icon = document.querySelector(".icon");
-const menuBody = document.querySelector(".menu__body")
+const html = document.querySelector('#noscroll');
+const links = menu.querySelectorAll('.menu__link');
+const icon = document.querySelector('.icon');
+const menuBody = document.querySelector('.menu__body')
 
 let width =
   window.innerWidth ||
@@ -28,11 +28,26 @@ function handlerResize() {
 
 window.addEventListener("resize", debounce(handlerResize, 500)); 
 
-html.addEventListener("click", () => {
-   if (width < 992) {
+window.addEventListener("click", () => {
+   if ( width > 992) {
       html.classList.remove("noscroll");  
+   } else {
+      html.classList.add("noscroll");  
    }
 });
+
+// if (width < 992) {
+//    menu.classList.remove("active");        
+//    btn.classList.remove("active");       
+//    html.classList.remove("noscroll");     
+//    icon.classList.remove("active");        
+// }
+
+// window.onresize = function(){
+//    if (width > 992) {
+//       html.classList.remove("noscroll");  
+//    }
+// }
 
 btn.addEventListener("click", () => {     // Если мы нажимаем на burger
   menu.classList.toggle("active");        // После нажития переопределяет класс
