@@ -1,47 +1,38 @@
 .theme {
-   border-radius: 100%;
-   width: rem(32px);
-   height: rem(32px);
-   background-color: rgb(252, 252, 252);
-   display: none;
-   &.active {
-      display: flex;
-      position: absolute;
+    border-radius: 100%;
+    background-color: rgb(252, 252, 252);
+    margin-left: rem(24px);
+    cursor: pointer;
+    &.active {
       right: rem(65px);
       top: rem(19px);
-   }
-   &__backround {
+    }
+    &__backround {
       display: flex;
+      align-items: center;
       height: rem(20px);
       width: rem(20px);
-      border: solid rem(2px) #02897A;
+      border: solid rem(2px) #02897a;
       border-radius: 100%;
       background-color: rgb(253, 251, 245);
       padding: rem(1px);
-   }
-   &__semicircle {
-      background: #02897A;
+    }
+    &__semicircle {
+      display: inline-block;
+      background: #02897a;
       height: 100%;
       width: 50%;
       margin-left: auto;
       border-radius: 0 100% 100% 0 / 0 50% 50% 0;
-   }
-}
-
-// Меняет сторону декора при клике на темную тему
-[data-theme="dark"] {
-   .theme__semicircle { 
+    }
+  }
+  
+  // Меняет сторону декора при клике на темную тему
+  [data-theme='dark'] {
+    .theme__semicircle {
       margin-left: 0;
       margin-right: auto;
       border-radius: 100% 0 0 100% / 50% 0 0 50%;
-   }
-}
-
-@media screen and (min-width:992px) {
-   .theme {
-      display: flex;
-      &.active {
-         position: static;
-      }
-   }
-}
+    }
+  }
+  

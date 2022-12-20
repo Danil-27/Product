@@ -1,83 +1,141 @@
+// .footer {
+//    color: var(--color-text-black);
+//    &__item {
+//       display: flex;
+//       flex-direction: column;
+//       text-align: center;
+//    }
+//    &__product {
+//       display: flex;
+//       justify-content: center;
+//       margin-bottom: rem(25px);
+//    }
+//    &-box-img {
+//       display: flex;
+//       align-items: center;
+//       span {
+//          font-size: 25px;
+//          font-weight: 700;
+//          margin-left: rem(16px);
+//          margin-top: rem(7px);
+//          color: var(--color-logo);
+//       }
+//    }
+//    &_Resource, &_Legal,  &_icon {
+//       margin-bottom: rem(32px);
+//    }
+//    &__title {
+//       font-weight: 500;
+//       font-size: rem(20px);
+//       margin-bottom: rem(8px);
+//       &_m {
+//          margin-bottom: rem(34px);
+//       }
+//    }
+//    &_deal {
+//       display: flex;
+//       align-items: center;
+//       input {
+//          width: 100%;
+//          height: rem(48px);
+//          padding: rem(5px);
+//          margin-bottom: rem(20px);
+//       }
+//    }
+//    &__p {
+//       text-align: center;
+//       margin-top: rem(45px);
+//       margin-bottom: rem(45px);
+//    }
+//    .button {
+//       width: rem(130px);
+//       height: rem(40px);
+//    }
+// }
+
+// @media screen and (min-width:428px){
+//    .footer {
+//       &_deal {
+//          input {
+//             width: rem(325px);
+//          }
+//       }
+//    }
+// }
+
+// @media screen and (min-width:992px) {
+//    .footer {
+//       &__item {
+//          text-align: start;
+
+//       }
+//       &_Resource, &_Legal,  &_icon {
+//          margin-bottom: rem(0px);
+//       }
+//       &_deal {
+//          align-items: flex-start;
+//          input {
+//             width: 100%;
+//             margin-bottom: rem(20px);
+//          }
+//       }
+//    }
+// }
+
 .footer {
-   color: var(--color-text-black);
-   &__item {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-   }
-   &__product {
-      display: flex;
-      justify-content: center;
+    color: var(--color-text-black);
+    .logo {
       margin-bottom: rem(25px);
-   }
-   &-box-img {
-      display: flex;
-      align-items: center;
-      span {
-         font-size: 25px;
-         font-weight: 700;
-         margin-left: rem(16px);
-         margin-top: rem(7px);
-         color: var(--color-logo);
+      &__text {
+        font-size: 1.5rem;
       }
-   }
-   &_Resource, &_Legal,  &_icon {
-      margin-bottom: rem(32px);
-   }
-   &__title {
+      &__img {
+        height: 30px;
+      }
+    }
+    .menu {
+      margin: 0 0 rem(32px);
+      &__item {
+        margin-bottom: rem(16px);
+      }
+      &__link {
+        color: var(--color-text-black);
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &__title {
       font-weight: 500;
       font-size: rem(20px);
-      margin-bottom: rem(8px);
-      &_m {
-         margin-bottom: rem(34px);
-      }
-   }
-   &_deal {
-      display: flex;
-      align-items: center;
-      input {
-         width: 100%;
-         height: rem(48px);
-         padding: rem(5px);
-         margin-bottom: rem(20px);
-      }
-   }
-   &__p {
+      margin-bottom: rem(18px);
+    }
+    &__copyright {
       text-align: center;
       margin-top: rem(45px);
       margin-bottom: rem(45px);
-   }
-   .button {
-      width: rem(130px);
-      height: rem(40px);
-   }
-}
-
-@media screen and (min-width:428px){
-   .footer {
-      &_deal {
-         input {
-            width: rem(325px);
-         }
+    }
+    .input {
+      display: block;
+      width: 100%;
+      margin-bottom: rem(20px);
+      min-height: rem(48px);
+    }
+    .social {
+      margin-bottom: rem(30px);
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .footer {
+      .logo,
+      .social {
+        justify-content: center;
       }
-   }
-}
-
-@media screen and (min-width:992px) {
-   .footer {
-      &__item {
-         text-align: start;
-
-      }
-      &_Resource, &_Legal,  &_icon {
-         margin-bottom: rem(0px);
-      }
-      &_deal {
-         align-items: flex-start;
-         input {
-            width: 100%;
-            margin-bottom: rem(20px);
-         }
-      }
-   }
-}
+    }
+  }
+  @media screen and (max-width: 787px) {
+    .footer {
+      text-align: center;
+    }
+  }
+  

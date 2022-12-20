@@ -2,9 +2,9 @@
 <html lang="en" data-theme="light" id="noscroll">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/imeges/Favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/imeges/Favicon/favicon-32x32.png">
@@ -13,288 +13,330 @@
     <link rel="mask-icon" href="/imeges/Favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="theme-color" content="#ffffff">
-   <!-- SEO -->
-   <meta name="description" content="">
-   <!-- Title -->
-   <title>Product</title>
-   <!-- Styles -->
-   <link rel="stylesheet" href="/css/styles.css">
-   <!-- Js -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!-- SEO -->
+    <meta name="description" content="">
+    <!-- Title -->
+    <title>Product</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 </head>
 
 <body>
-   <header class="header is-fixed">
-      <div class="header__container container">
-         <a class="logo" href="/index.html">
-            <img class="logo__img" src="imeges/Header/Main-icon.svg" alt="Упс пусто">
-            <span class="logo__text">Product</span>
-         </a>
-         <div class="menu">
-            <nav class="menu__body">
-               <ul class="menu__list">
-                  <li class="menu__item menu__item_m"><a class="menu__link menu__link_hover"
-                        href="index.html">Product</a></li>
-                  <li class="menu__item menu__item_m"><a class="menu__link menu__link_hover"
-                        href="customers.html">Customers</a></li>
-                  <li class="menu__item menu__item_m"><a class="menu__link menu__link_hover menu__link_active"
-                        href="pricing.html">Pricing</a></li>
-                  <li class="menu__item menu__item_m"><a class="menu__link menu__link_hover"
-                        href="resources.html">Resources</a></li>
-                  <li class="menu__item"><a class="menu__link menu__link_bg-in open-popup-1">Sign In</a></li>
-                  <li class="menu__item"><a class="menu__link menu__link_bg-up open-popup-2">Sign Up</a></li>
-               </ul>
+    <header class="header is-fixed">
+        <div class="header__container container">
+            <div class="header__logo">
+                <a class="logo" href="/index.html">
+                    <img class="logo__img" src="/imeges/Header/Main-icon.svg" alt="Упс пусто" />
+                    <span class="logo__text">Product</span>
+                </a>
+            </div>
+            <nav class="navbar">
+                <div class="navbar__menu">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="index.html">Product</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="customers.html">Customers</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link menu__link_active" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="resources.html">Resources</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="button button_xs button_bordered" data-modal="popup1">Sign In</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="button button_xs button_primary" data-modal="popup2">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-         </div>
-         <div class="theme icon light">
-            <div class="theme__backround">
-               <div class="theme__semicircle"></div>
-            </div>
-         </div>
-         <div class="burger">
-            <span></span>
-         </div>
-      </div>
-   </header>
-   <main class="page">
-      <section class="section section_price  container">
-         <h1 class="is-visually-hidden">the product offers a standard price plan, but we also have an individual approach to each of you</h1>
-         <div class="section__heading">
-            <h2 class="title title_xs is-uppercase">pricing</h2>
-            <h2 class="title title_lg">Let’s get some real work done here.</h2>
-            <p class="subtitle subtitle_price">Prodict is your perfect solution for working. Get started now for free
-            </p>
-         </div>
-         <div class="row row-sm-around row-between">
-            <div class="is-center col col-sm-6  col-lg-4">
-               <div class="card card_margin">
-                  <div class="card__services">Free</div>
-                  <p class="card__subtitle">Brief price description</p>
-                  <div class="card__month">
-                     <div class="card__cost">0</div>
-                     <div class="card__wrapper">
-                        <div class="card__unit">$</div>
-                        <div class="card__time">Per / month</div>
-                     </div>
-                  </div>
-                  <div class="card__additionally">
-                     <span>Only 2 Operators</span>
-                     <span>Notifications</span>
-                     <span>Landing Pages</span>
-                  </div>
-                  <button class="card__button button button_card">Order Now</button>
-               </div>
-            </div>
-            <div class="col col-sm-6 col-lg-4">
-               <div class="card card_margin">
-                  <div class="card__services">Standard</div>
-                  <p class="card__subtitle">Brief price description</p>
-                  <div class="card__month">
-                     <div class="card__cost">5</div>
-                     <div class="card__wrapper">
-                        <div class="card__unit">$</div>
-                        <div class="card__time">Per / month</div>
-                     </div>
-                  </div>
-                  <div class="card__additionally">
-                     <span>5+ Operators</span>
-                     <span>Notifications</span>
-                     <span>Landing Pages</span>
-                  </div>
-                  <button class="card__button button button_card">Order Now</button>
-               </div>
-            </div>
-            <div class="col col-sm-6 col-lg-4">
-               <div class="card ">
-                  <div class="card__services">Premium</div>
-                  <p class="card__subtitle">Brief price description</p>
-                  <div class="card__month">
-                     <div class="card__cost">10</div>
-                     <div class="card__wrapper">
-                        <div class="card__unit">$</div>
-                        <div class="card__time">Per / month</div>
-                     </div>
-                  </div>
-                  <div class="card__additionally">
-                     <span>10+ Operators</span>
-                     <span>Notifications</span>
-                     <span>Landing Pages</span>
-                  </div>
-                  <button class="card__button button button_card">Order Now</button>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="section section_exterprise exterprise ">
-         <div class="section__heading container">
-            <h2 class="title title_xs is-uppercase">exterprise</h2>
-            <h2 class="title title_lg">Are you interested in a custom-tailored plan?</h2>
-            <p class="subtitle subtitle_price">Product is a set of advanced features for really large teams with
-               projects.</p>
-            <button class="button">Get in touch with us</button>
-         </div>
-      </section>
-      <section class="section section_info info info_pricing container ">
-         <h2 class="section__heading title title_md">Product is being used with great effects alongside:</h2>
-         <div class="row row-md-between row-lg-align-center">
-            <div class="info__picture col col-md-6">
-               <div class="info__img info__img_two"></div>
-            </div>
-            <div class="info__header col col-md-5">
-               <div class="info__item">
-                  <div class="info__tick info__tick_yellow"><img src="/imeges/pricing/01.svg" alt="упс"></div>
-                  <h3 class="title title_xs">Entrepreneur</h3>
-               </div>
-               <p class="info__text ">Product is a great way to help medium and samall enterprise owners achieve their
-                  goals</p>
-               <div class="info__item">
-                  <div class="info__tick info__tick_red"><img src="/imeges/pricing/02.svg" alt="упс"></div>
-                  <h3 class="title title_xs">Accountants</h3>
-               </div>
-               <p class="info__text">Whether you are working on contract with clients, or on other key accounting
-                  documents, Product is for you</p>
-               <div class="info__item">
-                  <div class="info__tick info__tick_blue"><img src="/imeges/pricing/03.svg" alt="упс"></div>
-                  <h3 class="title title_xs">Universities</h3>
-               </div>
-               <p class="info__text">Organize university projects and have documents easily graded online with Product
-               </p>
-            </div>
-         </div>
-      </section>
-      <section class="section section_question question container">
-         <div class="section__heading">
-            <p class="title title_md ">Frequently asked question</p>
-            <p class="subtitle subtitle_small">Something is not clear? You need help? Check our FAQ section</p>
-         </div>
-         <div class="row row-center">
-            <div id="accordion" class="accordion col-lg-10">
-               <ul class="accordion__list">
-                  <li class="accordion__item">
-                     <button data-toggle="collapse" type="button" class="accordion__trigger subtitle subtitle_small"><span class="accordion__decor"></span>What are my payment option?</button>
-                     <div class="accordion__content">
-                        <div class="accordion__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla,
-                           obcaecati a quidem quasi, deserunt quos quis quia harum. Nulla, obcaecati a quidem quasi,
-                           deserunt quos quis quia harum veniam velit minima dolorem eos cumque laborum veritatis
-                           facere cupiditate, ipsum perspiciatis!</div>
-                     </div>
-                  </li>
-                  <li class="accordion__item">
-                     <button data-toggle="collapse" type="button" class="accordion__trigger subtitle subtitle_small"><span class="accordion__decor"></span>How can I invite collaborator to platform?</button>
-                     <div class="accordion__content">
-                        <div class="accordion__text">After creating your account you will have an oppurtunity to create your first project that will be associated withthe collaborators e-mail. An invitation  will be sent automatically. Then, invited user will have to confirm his account by e-mail and finish userd onboarding.</div>
-                     </div>
-                  </li>
-                  <li class="accordion__item">
-                     <button data-toggle="collapse" type="button" class="accordion__trigger subtitle subtitle_small"><span class="accordion__decor"></span>Can I upgrade my plan?</button>
-                     <div class="accordion__content">
-                        <div class="accordion__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla,
-                           obcaecati a quidem quasi, deserunt quos quis quia harum.</div>
-                     </div>
-                  </li>
-                  <li class="accordion__item">
-                     <button data-toggle="collapse" type="button" class="accordion__trigger subtitle subtitle_small"><span class="accordion__decor"></span>Can I cancel my plan at anytime?</button>
-                     <div class="accordion__content">
-                        <div class="accordion__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla,
-                           obcaecati a quidem quasi, deserunt quos quis quia harum.</div>
-                     </div>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </section>
-      <footer class="footer container">
-         <div class="footer__row row row-lg-between">
-            <div class="footer__item footer_icon col col-lg-3">
-               <div class="footer__product">
-                  <div class="footer-box-img"><img src="/imeges/footer/Product.svg" alt="Упс пусто"><span>Product</span></div>
-               </div>
-               <div class="footer__wrapper">
-                  <a href="#" class="footer__instagram"></a>
-                  <a href="#" class="footer__facebook"></a>
-                  <a href="#" class="footer__martin"></a>
-               </div>
-            </div>
-            <div class="footer__item footer_Resource col col-sm-6 col-lg-2">
-               <h3 class="footer__title">Resource</h3>
-               <p>About Us</p>
-               <p>Blog</p>
-               <p>Contact</p>
-               <p>FAQ</p>
-            </div>
-            <div class="footer__item footer_Legal col col-sm-6 col-lg-2">
-               <h3 class="footer__title">Legal Stuff</h3>
-               <p>Disclaimer</p>
-               <p>Financing</p>
-               <p>Privacy Policy</p>
-               <p>Terms of Service</p>
-            </div>
-            <div class="footer__item footer_deal col col-lg-3">
-               <h3 class="footer__title footer__title_m">knowing you're always on the best energy deal.</h3>
-               <input type="text">
-               <button class="button">Sign up Now</button>
-            </div>
-         </div>
-         <p class="footer__p">Made With Love By Product All Right Reserved </p>
-      </footer>
-   </main>
-   <div class="popup__bg-1">
-      <form class="popup-1">
-         <svg class="close-popup-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path fill="#02897A"
-               d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
-         </svg>
-         <label class="table">
-            <input class="input" type="email" name="email">
-            <span class="label__text">
-               Email or phone
+            <span class="theme light">
+                <span class="theme__backround">
+                    <span class="theme__semicircle"></span>
+                </span>
             </span>
-         </label>
-         <label class="table">
-            <input class="input" type="password" name="password">
-            <span class="label__text">
-               password
+            <span class="burger">
+                <span></span>
             </span>
-         </label>
-         <div class="checkbox">
-            <input class="checkbox__input checkbox__input_none" type="checkbox" id="agreement" name="agreement">
-            <label class="checkbox__tabel" for="agreement">This information will be used to find your account in the game.</label>
-         </div>
-         <button type="submit">inlet</button>
-      </form>
-   </div>
-   <div class="popup__bg-2">
-      <form class="popup-2">
-         <svg class="close-popup-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path fill="#02897A"
-               d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
-         </svg>
-         <label class="table">
-            <input class="input" type="email" name="email">
-            <span class="label__text">
-               Email or phone
-            </span>
-         </label>
-         <label class="table">
-            <input class="input" type="password" name="password">
-            <span class="label__text">
-               password
-            </span>
-         </label>
-         <div class="checkbox">
-            <input class="checkbox__input" type="checkbox" id="register" name="agreement">
-            <label class="checkbox__tabel" for="register">I agree to the following set rules: Cookie Policy, User
-               Agreement, License Agreement</label>
-         </div>
-         <button type="submit">register</button>
-      </form>
-   </div>
-   <script src="JavaScript/index.js"></script>
-   <script src="JavaScript/theme.js"></script>
-   <script src="JavaScript/popup.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-   <script src="JavaScript/swiper.js"></script>
-   <script src="JavaScript/accordion.js"></script>
+        </div>
+    </header>
+    <main class="page">
+        <section class="section section_price  container">
+            <h1 class="is-visually-hidden">the product offers a standard price plan, but we also have an individual
+                approach to each of you</h1>
+            <div class="section__heading">
+                <h2 class="title title_xs is-uppercase">pricing</h2>
+                <h2 class="title title_lg">Let’s get some real work done here.</h2>
+                <p class="subtitle subtitle_price">Prodict is your perfect solution for working. Get started now for
+                    free
+                </p>
+            </div>
+            <div class="row row-sm-around row-between">
+                <div class="is-center col-sm-6  col-lg-4">
+                    <div class="card card_margin">
+                        <div class="card__services">Free</div>
+                        <p class="card__subtitle">Brief price description</p>
+                        <div class="card__month">
+                            <div class="card__cost">0</div>
+                            <div class="card__wrapper">
+                                <div class="card__unit">$</div>
+                                <div class="card__time">Per / month</div>
+                            </div>
+                        </div>
+                        <div class="card__additionally">
+                            <span>Only 2 Operators</span>
+                            <span>Notifications</span>
+                            <span>Landing Pages</span>
+                        </div>
+                        <button class="card__button button button_card">Order Now</button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card card_margin">
+                        <div class="card__services">Standard</div>
+                        <p class="card__subtitle">Brief price description</p>
+                        <div class="card__month">
+                            <div class="card__cost">5</div>
+                            <div class="card__wrapper">
+                                <div class="card__unit">$</div>
+                                <div class="card__time">Per / month</div>
+                            </div>
+                        </div>
+                        <div class="card__additionally">
+                            <span>5+ Operators</span>
+                            <span>Notifications</span>
+                            <span>Landing Pages</span>
+                        </div>
+                        <button class="card__button button button_card">Order Now</button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card ">
+                        <div class="card__services">Premium</div>
+                        <p class="card__subtitle">Brief price description</p>
+                        <div class="card__month">
+                            <div class="card__cost">10</div>
+                            <div class="card__wrapper">
+                                <div class="card__unit">$</div>
+                                <div class="card__time">Per / month</div>
+                            </div>
+                        </div>
+                        <div class="card__additionally">
+                            <span>10+ Operators</span>
+                            <span>Notifications</span>
+                            <span>Landing Pages</span>
+                        </div>
+                        <button class="card__button button button_card">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section_exterprise exterprise ">
+            <div class="section__heading container">
+                <h2 class="title title_xs is-uppercase">exterprise</h2>
+                <h2 class="title title_lg">Are you interested in a custom-tailored plan?</h2>
+                <p class="subtitle subtitle_price">Product is a set of advanced features for really large teams with
+                    projects.</p>
+                <button class="button">Get in touch with us</button>
+            </div>
+        </section>
+        <section class="section section_info info info_pricing container ">
+            <h2 class="section__heading title title_md">Product is being used with great effects alongside:</h2>
+            <div class="row row-md-between row-lg-align-center">
+                <div class="info__picture col-md-6">
+                    <div class="info__img info__img_two"></div>
+                </div>
+                <div class="info__header col-md-5">
+                    <div class="info__item">
+                        <div class="info__tick info__tick_yellow"><img src="/imeges/pricing/01.svg" alt="упс"></div>
+                        <h3 class="title title_xs">Entrepreneur</h3>
+                    </div>
+                    <p class="info__text ">Product is a great way to help medium and samall enterprise owners achieve
+                        their
+                        goals</p>
+                    <div class="info__item">
+                        <div class="info__tick info__tick_red"><img src="/imeges/pricing/02.svg" alt="упс"></div>
+                        <h3 class="title title_xs">Accountants</h3>
+                    </div>
+                    <p class="info__text">Whether you are working on contract with clients, or on other key accounting
+                        documents, Product is for you</p>
+                    <div class="info__item">
+                        <div class="info__tick info__tick_blue"><img src="/imeges/pricing/03.svg" alt="упс"></div>
+                        <h3 class="title title_xs">Universities</h3>
+                    </div>
+                    <p class="info__text">Organize university projects and have documents easily graded online with
+                        Product
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section section_question question container">
+            <div class="section__heading">
+                <p class="title title_md ">Frequently asked question</p>
+                <p class="subtitle subtitle_small">Something is not clear? You need help? Check our FAQ section</p>
+            </div>
+            <div class="row row-center">
+                <div id="accordion" class="accordion col-lg-10">
+                    <ul class="accordion__list">
+                        <li class="accordion__item">
+                            <button data-toggle="collapse" type="button"
+                                class="accordion__trigger subtitle subtitle_small"><span
+                                    class="accordion__decor"></span>What are my payment option?</button>
+                            <div class="accordion__content">
+                                <div class="accordion__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Nulla,
+                                    obcaecati a quidem quasi, deserunt quos quis quia harum. Nulla, obcaecati a quidem
+                                    quasi,
+                                    deserunt quos quis quia harum veniam velit minima dolorem eos cumque laborum
+                                    veritatis
+                                    facere cupiditate, ipsum perspiciatis!</div>
+                            </div>
+                        </li>
+                        <li class="accordion__item">
+                            <button data-toggle="collapse" type="button"
+                                class="accordion__trigger subtitle subtitle_small"><span
+                                    class="accordion__decor"></span>How can I invite collaborator to platform?</button>
+                            <div class="accordion__content">
+                                <div class="accordion__text">After creating your account you will have an oppurtunity to
+                                    create your first project that will be associated withthe collaborators e-mail. An
+                                    invitation will be sent automatically. Then, invited user will have to confirm his
+                                    account by e-mail and finish userd onboarding.</div>
+                            </div>
+                        </li>
+                        <li class="accordion__item">
+                            <button data-toggle="collapse" type="button"
+                                class="accordion__trigger subtitle subtitle_small"><span
+                                    class="accordion__decor"></span>Can I upgrade my plan?</button>
+                            <div class="accordion__content">
+                                <div class="accordion__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Nulla,
+                                    obcaecati a quidem quasi, deserunt quos quis quia harum.</div>
+                            </div>
+                        </li>
+                        <li class="accordion__item">
+                            <button data-toggle="collapse" type="button"
+                                class="accordion__trigger subtitle subtitle_small"><span
+                                    class="accordion__decor"></span>Can I cancel my plan at anytime?</button>
+                            <div class="accordion__content">
+                                <div class="accordion__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Nulla,
+                                    obcaecati a quidem quasi, deserunt quos quis quia harum.</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="footer container">
+            <div class="row row-lg-between">
+                <div class="col-lg-3">
+                    <a class="logo" href="/index.html">
+                        <img class="logo__img" src="/imeges/Header/Main-icon.svg" alt="Упс пусто" />
+                        <span class="logo__text">Product</span>
+                    </a>
+                    <div class="social">
+                        <a href="#" class="social__link social__link_instagram"></a>
+                        <a href="#" class="social__link social__link_facebook"></a>
+                        <a href="#" class="social__link social__link_twitter"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h3 class="footer__title">Resource</h3>
+                    <ul class="menu">
+                        <li class="menu__item"><a class="menu__link" href="">About Us</a></li>
+                        <li class="menu__item"><a class="menu__link" href="">Blog</a></li>
+                        <li class="menu__item"><a class="menu__link" href="">Contact</a></li>
+                        <li class="menu__item"><a class="menu__link" href="">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h3 class="footer__title">Legal Stuff</h3>
+                    <ul class="menu">
+                        <li class="menu__item"><a class="menu__link" href="">Disclaimer</a></li>
+                        <li class="menu__item"><a class="menu__link" href="">Financing</a></li>
+                        <li class="menu__item"><a class="menu__link" href="">Privacy Policy</a></li>
+                        <li class="menu__item"><a class="menu__link" href="">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h3 class="footer__title">
+                        knowing you're always on the best energy deal.
+                    </h3>
+                    <input class="input" type="text" />
+                    <button class="button button_xs button_primary">Sign up Now</button>
+                </div>
+            </div>
+            <p class="footer__copyright">Made With Love By Product All Right Reserved</p>
+        </footer>
+    </main>
+    <div class="popup popup_md" id="popup1">
+        <div class="popup__bg"></div>
+        <div class="popup__container">
+            <svg class="popup__close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#02897A"
+                    d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+            </svg>
+            <form action="">
+                <label class="label">
+                    <input class="input" type="email" name="email" />
+                    <span class="label__text"> Email or phone </span>
+                </label>
+                <label class="label">
+                    <input class="input" type="password" name="password" />
+                    <span class="label__text"> password </span>
+                </label>
+                <div class="checkbox">
+                    <input class="checkbox__input checkbox__input_none" type="checkbox" id="agreement"
+                        name="agreement" />
+                    <label class="checkbox__tabel" for="agreement">This information will be used to find your account in
+                        the
+                        game.</label>
+                </div>
+                <button class="button button_sm button_primary" type="submit">
+                    inlet
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup popup_md" id="popup2">
+        <div class="popup__bg"></div>
+        <div class="popup__container">
+            <svg class="popup__close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#02897A"
+                    d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+            </svg>
+            <label class="label">
+                <input class="input" type="email" name="email" />
+                <span class="label__text"> Email or phone </span>
+            </label>
+            <label class="label">
+                <input class="input" type="password" name="password" />
+                <span class="label__text"> password </span>
+            </label>
+            <div class="checkbox">
+                <input class="checkbox__input" type="checkbox" id="register" name="agreement" />
+                <label class="checkbox__tabel" for="register">I agree to the following set rules: Cookie Policy, User
+                    Agreement,
+                    License Agreement</label>
+            </div>
+            <button class="button button_sm button_primary" type="submit">
+                register
+            </button>
+        </div>
+    </div>
+    <script src="JavaScript/index.js"></script>
+    <script src="JavaScript/theme.js"></script>
+    <script src="JavaScript/popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="JavaScript/swiper.js"></script>
+    <script src="JavaScript/accordion.js"></script>
 </body>
 
 </html>

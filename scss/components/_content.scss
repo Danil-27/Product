@@ -1,126 +1,127 @@
 .content {
-   &__main {
-      margin-top: rem(10px);
-   }
-   &__text {
-      max-width: rem(300px);
-      margin: 0 auto;
+    &__container {
       text-align: center;
-      margin-top: rem(16px);
+    }
+    &__text {
+      margin: 0 auto;
+      margin-top: rem(18px);
       color: var(--color-text-black);
-   }
-   &__source {
+    }
+    .title {
+      line-height: 1.4;
+      margin-bottom: rem(18px);
+    }
+    &__source {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       margin-top: rem(30px);
-   }
-   &__link-video {
+    }
+    &__link-video {
       display: flex;
       align-items: center;
       color: var(--color-green);
       font-weight: 600;
       img {
-         margin-right: rem(8px);
+        margin-right: rem(8px);
       }
-   }
-   .button {
-      padding: rem(15px) rem(25px);
+    }
+    .button {
       margin-right: rem(28px);
-   }
-}
-
-@media screen and (max-width:360px) {
-   .content {
+    }
+  }
+  
+  @media screen and (max-width: 360px) {
+    .content {
       &__link-video {
-         width: 100%;
-         justify-content: center;
-         margin-top: rem(12px);
+        width: 100%;
+        justify-content: center;
+        margin-top: rem(12px);
       }
       .button {
-         justify-content: center;
-         margin-right: rem(0px);
+        justify-content: center;
+        margin-right: rem(0px);
       }
-   }
-} 
-
-@media screen and (min-width:768px) { 
-   .content {
-      &__text {
-         max-width: 100%;
-         margin: 0;
-         text-align: start;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .content {
+      display: flex;
+      &__container {
+        margin: auto 0;
+        text-align: left;
       }
       &__source {
-         display: flex;
-         justify-content: flex-start;
-         margin-top: rem(30px);
+        display: flex;
+        justify-content: flex-start;
+        margin-top: rem(30px);
       }
-   }
-}
-
-
-.content_resources {
-   .content {
+    }
+  }
+  
+  .content_resources {
+    .content {
       &__source {
-         display: flex;
+        display: flex;
       }
       &__shell {
-         display: flex;
-         align-items: center;
-         margin-top: rem(20px);
+        display: flex;
+        align-items: center;
+        margin-top: rem(20px);
       }
       &__people {
-         width: 100%;
-         height: 100%;
-         background-image: url("/imeges/resources/img.svg");
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/resources/img.svg');
       }
       &__other {
-         margin-left: 10px;
-         color: var(--color-text-dark);
-         span {
-            color: var(--color-green);
-         }
+        margin-left: 10px;
+        color: var(--color-text-dark);
+        span {
+          color: var(--color-green);
+        }
       }
-   }
-}
-
-.content__mail{
-   display: flex;
-   width: 100%;
-   .content__skin ,.input {
-      background: rgba(255, 0, 0, 0.0);
-      border:  rem(1px) solid var(--color-white-2);
+    }
+  }
+  
+  .content__mail {
+    display: flex;
+    width: 100%;
+    .content__skin,
+    .input {
+      background: rgba(255, 0, 0, 0);
+      border: rem(1px) solid var(--color-white-2);
       border-top-color: var(--color-white-2);
       border-bottom-color: var(--color-white-2);
-   }
-   form {
-      width: 100% ;
-   }
-   .input{
-      width: 100% ;
+    }
+    form {
+      width: 100%;
+    }
+    .input {
+      width: 100%;
       padding: rem(25px) rem(0px) rem(25px) rem(22px);
       color: var(--color-text-dark);
       border-left-color: var(--color-white-2);
-      border-right-color:  transparent;
+      border-right-color: transparent;
       border-top-left-radius: rem(100px);
       border-bottom-left-radius: rem(100px);
       font-size: rem(20px);
-      
+  
       &:focus {
-         background-color: transparent;
+        background-color: transparent;
       }
-   } 
-   .content__skin {
-      padding: rem(25px)  rem(125px) rem(25px) rem(22px);
+    }
+    .content__skin {
+      padding: rem(25px) rem(125px) rem(25px) rem(22px);
       border-left-color: transparent;
-      border-right-color:var(--color-white-2);
+      border-right-color: var(--color-white-2);
       border-top-right-radius: rem(100px);
       border-bottom-right-radius: rem(100px);
-      margin-left: rem(-2px) ;
+      margin-left: rem(-2px);
       position: relative;
-   }
-   .button {
+    }
+    .button {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -130,5 +131,6 @@
       font-weight: 600;
       margin: 0;
       padding: rem(15px) rem(25px);
-   }
-}
+    }
+  }
+  

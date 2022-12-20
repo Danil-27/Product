@@ -1,209 +1,135 @@
 .info {
-   &__picture {
-      display: flex;
-      justify-content: center;
-      margin-bottom: rem(50px);
-      width: 300px;
-      height: auto;
-   }
-   &__img {
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: rem(350px);
-      height: rem(310px);
-      &_one {
-         background-image: url("/imeges/infarmation/one.svg");
-      }
-      &_two {
-         background-image: url("/imeges/infarmation/two.svg");
-      }
-      &_three {
-         background-image: url("/imeges/infarmation/three.svg"); 
-      }
-   }
-   &__header {
-      color: var(--color-text-black);
-   }
-   &__caption {
-      font-weight: 600;
-      margin-bottom: rem(12px);
-   }
-   &__paragraf {
-      &_one {
-         margin-bottom: rem(30px);
-      }
-      &_two {
-         margin-bottom: rem(25px);
-      }
-      &_three {
+    color: var(--color-text-black);
+    &__caption {
+       font-weight: 600;
+       margin-bottom: rem(12px);
+    }
+    &__paragraf {
+       margin-bottom: rem(30px);
+    }
+    //castom two block
+    &__item {
+       display: flex;
+       align-items: center;
+       margin-bottom: rem(30px);
+    }
+    &__tick {
+       width: rem(35px);
+       height: rem(35px);
+       border-radius: rem(14px);
+       margin-right: rem(30px);
+       position: relative;
+       background: url(../images/infarmation/Path.svg) no-repeat center;
+       &_yellow {
+          background-color: #FF9900;
+       }
+       &_red {
+          background-color: #F03E3D;
+       }
+       &_blue {
+          background-color: #4D8DFF;
+       }
+    }
+    &__text {
+       flex: 1
+    }
+ }
 
-      }
-   }
-   //castom two block
-   &__item {
-      display: flex;
-      align-items: center;
-      margin-bottom: rem(30px);
-   }
-   &__tick {
-      display: flex;
-      flex: 0 0 auto;
-      width: rem(35px);
-      height: rem(35px);
-      border-radius: rem(14px);
-      margin-right: rem(30px);
-      position: relative;
-      img {
-         margin: auto;
-         width: 16px;
-         height: 12px;
-      }
-      &_yellow {
-         background-color: #FF9900;
-      }
-      &_red {
-         background-color: #F03E3D;
-      }
-      &_blue {
-         background-color: #4D8DFF;
-      }
-   }
-}
-
-@media screen and (min-width:768px) {
-   .info {
-      &__picture {
-         align-items: center;
-         margin-bottom: 0;
-         &_order-1 , &_order-3 {
-            order: 1;
-         }
-      }
-   }
-}
-
-@media screen and (min-width:992px) {
-   .info {
-      &__picture {
-         justify-content: center;
-         width: 500px;
-         height: auto;
-         &_order-1 , &_order-3  {
-            justify-content: flex-end;
-         }
-      }
-      &__img {
-         width: rem(500px);
-         &_one {
-            width: rem(475px);
-            height: rem(420px);
-         }
-         &_two {
-            width: rem(540px);
-            height: rem(450px);
-         }
-         &_three {
-            height: rem(410px);
-         }
-      }
-   }
-}
-
-// customents
-.info_customers {
-   .info__picture_order-1 , .info__picture_order-3 {
-      justify-content: center;
-   }
-   .info__img {
-      width: rem(500px);
-      height: rem(280px);
-      &_one {
-         background-image: url("/imeges/customers/info-1.svg");
-      }
-      &_two {
-         background-image: url("/imeges/customers/info-2.svg");
-      }
-      &_three {
-         background-image: url("/imeges/customers/info-3.svg"); 
-      }
-   }
-   .subtitle {
-      margin-bottom: rem(16px);
-   }
-   .info__button {
-      display: flex;
-      justify-content: center;
-   }
-   .button {
-      padding: rem(11px) rem(18px);
-      font-weight: 600;
-      font-size: rem(18px);
-      margin-top: rem(75px);
-      margin-left: auto;
-      margin-right: auto;
-   }
-}
-
-@media screen and (min-width:768px) {
-   .info_customers {
-      .info__picture_order-1 , .info__picture_order-3 {
-         order: 0;
-      }
-      .info__picture_order-2 {
-         order: 1;
-      }
-   }
-}
-
-@media screen and (min-width:992px) {
-   .info_customers {
-      .info__picture_order-1 , .info__picture_order-3 {
-         justify-content: flex-start;
-      }
-   }
-}
-
-// Pricing
-.info_pricing {
-   .title {
-      font-weight: 600;
-   }
-   .info__img {
-      width: rem(352px);
-      height: rem(288px);
-      &_two {
-         background-image: url("/imeges/pricing/pipke_xs.svg");
-      }
-   }
-   .info__tick {
-      background-color: #F4F5F7;
-      width: rem(50px);
-      height: rem(50px);
-      border-radius: 50%;
-      margin-right: rem(15px);
-      img {
-         width: 24px;
-         height: 24px;
-      }
-   }
-   .info__item {
-      display: flex;
-      align-items: center;
-      margin-bottom: rem(16px);
-   }
-   .info__text:not(:last-child) {
-      margin-bottom: rem(32px);
-   }
-}
-
-@media screen and (min-width:768px) {
-   .info_pricing {
-      .info__img {
-         width: rem(530px);
-         height: rem(400px);
-         &_two {
-            background-image: url("/imeges/pricing/amico.svg");
-         }
-      }
-   }
-}
+ // customents
+ .info_customers {
+    .info__picture_order-1 , .info__picture_order-3 {
+       justify-content: center;
+    }
+    .info__img {
+       width: rem(500px);
+       height: rem(280px);
+       &_one {
+          background-image: url("../images/customers/info-1.svg");
+       }
+       &_two {
+          background-image: url("../images/customers/info-2.svg");
+       }
+       &_three {
+          background-image: url("../images/customers/info-3.svg"); 
+       }
+    }
+    .subtitle {
+       margin-bottom: rem(16px);
+    }
+    .info__button {
+       display: flex;
+       justify-content: center;
+    }
+    .button {
+       padding: rem(11px) rem(18px);
+       font-weight: 600;
+       font-size: rem(18px);
+       margin-top: rem(75px);
+       margin-left: auto;
+       margin-right: auto;
+    }
+ }
+ 
+ @media screen and (min-width:768px) {
+    .info_customers {
+       .info__picture_order-1 , .info__picture_order-3 {
+          order: 0;
+       }
+       .info__picture_order-2 {
+          order: 1;
+       }
+    }
+ }
+ 
+ @media screen and (min-width:992px) {
+    .info_customers {
+       .info__picture_order-1 , .info__picture_order-3 {
+          justify-content: flex-start;
+       }
+    }
+ }
+ 
+ // Pricing
+ .info_pricing {
+    .title {
+       font-weight: 600;
+    }
+    .info__img {
+       width: rem(352px);
+       height: rem(288px);
+       &_two {
+          background-image: url("../images/pricing/pipke_xs.svg");
+       }
+    }
+    .info__tick {
+       background-color: #F4F5F7;
+       width: rem(50px);
+       height: rem(50px);
+       border-radius: 50%;
+       margin-right: rem(15px);
+       img {
+          width: 24px;
+          height: 24px;
+       }
+    }
+    .info__item {
+       display: flex;
+       align-items: center;
+       margin-bottom: rem(16px);
+    }
+    .info__text:not(:last-child) {
+       margin-bottom: rem(32px);
+    }
+ }
+ 
+ @media screen and (min-width:768px) {
+    .info_pricing {
+       .info__img {
+          width: rem(530px);
+          height: rem(400px);
+          &_two {
+             background-image: url("../images/pricing/amico.svg");
+          }
+       }
+    }
+ }
