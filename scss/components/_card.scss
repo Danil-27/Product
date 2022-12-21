@@ -1,92 +1,217 @@
+// .card {
+//    max-width: rem(322px);
+//    margin: 0 auto;
+//    height: rem(456px);
+//    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+//    padding: rem(24px) 0 rem(32px) 0;
+//    text-align: center;
+//    background-color: var(--color-white);
+//    color: var(--color-standart);
+//    border-radius: rem(8px);
+//    transition: all .3s;
+//    &.card_margin {
+//       margin-bottom: rem(32px);
+//    }
+//    &__services {
+//       font-weight: 700;
+//       font-size: rem(24px);
+//    }
+//    &__subtitle {
+//       margin-bottom: rem(16px);
+//    }
+//    &__month {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//    }
+//    &__cost , &_d  {
+//       font-weight: 700;
+//       color: var(--color-green);
+//    }
+//    &__cost {
+//       font-size: rem(78px);
+//    }
+//    &__wrapper {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: flex-start;
+//       padding-top: rem(25px);
+//       margin-left: rem(8px);
+//       margin-bottom: rem(16px);
+//    }
+//    &__unit {
+//       font-size: rem(30px);
+//       margin-bottom: rem(4px);
+//       line-height: 1;
+//       font-weight: 600;
+//       color: var(--color-green);
+//    }
+//    &__time {
+//       color: var(--color-month);
+//    }
+//    &__additionally {
+//       margin-bottom: rem(38px);
+//       span {
+//          display: block;
+//          font-weight: 500;
+//       }
+//       span:not(:last-child) {
+//          margin-bottom: rem(16px);
+//       }
+//    }
+//    .button {
+//       transition: all .2s;
+//       font-weight: 500;
+//       padding: rem(10px) rem(18px);
+//    }
+//    &:hover {
+//       background-color: var(--color-green);
+//       .card__time ,.card__cost , .card__unit , .card__subtitle , .card__services , .card__additionally {
+//          color: var( --color-white);
+//       }
+//       .button{
+//          background-color: var( --color-white);
+//          color: var(--color-black);
+//       }
+//    }
+//    .button:hover {
+//       border: 1px solid #30444E;
+//       box-shadow: 0px 2px 0 #30444E, 2px 4px 6px #30444E;
+//       -webkit-transition: all 150ms linear;
+//       transition: all 150ms linear;
+//    }
+// }
+
+// @media screen and (min-width:992) {
+//    .card {
+//       &.card_margin {
+//          margin-bottom: rem(0px);
+//       }
+//    }
+// }
+
 .card {
-   max-width: rem(322px);
-   margin: 0 auto;
-   height: rem(456px);
-   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
-   padding: rem(24px) 0 rem(32px) 0;
-   text-align: center;
-   background-color: var(--color-white);
-   color: var(--color-standart);
-   border-radius: rem(8px);
-   transition: all .3s;
-   &.card_margin {
+    &_price {
+      max-width: rem(322px);
+      margin: 0 auto;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+      padding: rem(24px) 0 rem(32px) 0;
+      text-align: center;
+      background-color: var(--color-white);
+      color: var(--color-standart);
+      border-radius: rem(8px);
+      transition: background-color 0.3s;
+      .card__title {
+        font-weight: 700;
+        font-size: rem(24px);
+      }
+      .card__subtitle {
+        margin-bottom: rem(16px);
+      }
+      .card__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card__cost,
+      .card__unit {
+        color: var(--color-green);
+      }
+      .card__cost {
+        font-weight: 700;
+        font-size: rem(78px);
+      }
+      .card__col {
+        margin-left: rem(8px);
+        text-align: left;
+      }
+      .card__unit {
+        font-size: rem(30px);
+        margin-bottom: rem(4px);
+        line-height: 1;
+        font-weight: 600;
+        color: var(--color-green);
+      }
+      .card__time {
+        color: var(--color-month);
+      }
+      .card__additionally {
+        margin-bottom: rem(38px);
+        span {
+          display: block;
+          font-weight: 500;
+        }
+        span:not(:last-child) {
+          margin-bottom: rem(16px);
+        }
+      }
+      .button {
+        font-weight: 500;
+      }
+      &:hover {
+        background-color: var(--color-green);
+        &,
+        .card__cost,
+        .card__unit,
+        .card__time {
+          color: var(--color-white);
+        }
+        .button {
+          background-color: var(--color-white);
+          color: var(--color-black);
+        }
+      }
+    }
+    &_review {
+      max-width: rem(328px);
+      margin: 0 auto;
+      padding: rem(28px) rem(28px) rem(24px) rem(28px);
+      background-color: var(--color-white);
+      @extend .border;
+      border-radius: 5px;
+      .card__footer {
+        display: flex;
+      }
+      .card__avatar {
+        margin-right: rem(14px);
+      }
+      .card__body {
+        padding: rem(16px) 0;
+        color: #737373;
+        line-height: 1.7;
+      }
+      .card__name {
+        color: var(--color-green);
+      }
+    }
+    &_history {
+      border-radius: 10px;
+      border: solid 1px var(--border-color-history);
+      background-color: var(--color-white);
+      position: relative;
+      img {
+        width: 100%;
+        text-align: center;
+        border-top-left-radius: rem(8px);
+        border-top-right-radius: rem(8px);
+      }
+      .card__header {
+        padding: rem(24px) rem(24px) rem(40px) rem(24px);
+      }
+      .card__data {
+        span {
+          font-weight: 700;
+        }
+      }
+      .card__paragraf {
+        font-weight: 700;
+        font-size: rem(24px);
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .card {
       margin-bottom: rem(32px);
-   }
-   &__services {
-      font-weight: 700;
-      font-size: rem(24px);
-   }
-   &__subtitle {
-      margin-bottom: rem(16px);
-   }
-   &__month {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-   }
-   &__cost , &_d  {
-      font-weight: 700;
-      color: var(--color-green);
-   }
-   &__cost {
-      font-size: rem(78px);
-   }
-   &__wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding-top: rem(25px);
-      margin-left: rem(8px);
-      margin-bottom: rem(16px);
-   }
-   &__unit {
-      font-size: rem(30px);
-      margin-bottom: rem(4px);
-      line-height: 1;
-      font-weight: 600;
-      color: var(--color-green);
-   }
-   &__time {
-      color: var(--color-month);
-   }
-   &__additionally {
-      margin-bottom: rem(38px);
-      span {
-         display: block;
-         font-weight: 500;
-      }
-      span:not(:last-child) {
-         margin-bottom: rem(16px);
-      }
-   }
-   .button {
-      transition: all .2s;
-      font-weight: 500;
-      padding: rem(10px) rem(18px);
-   }
-   &:hover {
-      background-color: var(--color-green);
-      .card__time ,.card__cost , .card__unit , .card__subtitle , .card__services , .card__additionally {
-         color: var( --color-white);
-      }
-      .button{
-         background-color: var( --color-white);
-         color: var(--color-black);
-      }
-   }
-   .button:hover {
-      border: 1px solid #30444E;
-      box-shadow: 0px 2px 0 #30444E, 2px 4px 6px #30444E;
-      -webkit-transition: all 150ms linear;
-      transition: all 150ms linear;
-   }
-}
-
-@media screen and (min-width:992) {
-   .card {
-      &.card_margin {
-         margin-bottom: rem(0px);
-      }
-   }
-}
-
+    }
+  }
+  

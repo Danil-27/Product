@@ -1,77 +1,71 @@
 .for-you {
-   &__item {
-      text-align: center;
-      color: var(--color-text-black);
-   }
-   &__icon {
-      display: block;
-      margin: 0 auto;
-      width: rem(50px);
-      height: rem(50px);
-      border-radius: 19px;
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-      background-repeat: no-repeat;
-      background-position: center;
-      &:hover {
-         transform: scale(1.1);
-      }
-      &_cursor {
-         background-color: #02897A;
-         background-image: url('../../imeges/for-You/cursor.svg');
-      }
-      &_surveys {
-         background-color: #4D8DFF;
-         background-image: url('../../imeges/for-You/surveys.svg');
-      }
-      &_heart {
-         background-color: #740A76;
-         background-image: url('../../imeges/for-You/heart.svg');
-      }
-      &_watch {
-         background-color: #F03E3D;
-         background-image: url('../../imeges/for-You/watch.svg');
-      }
-   }
-   &_centered {
-      .for-you__icon_heart{
-         background-color: #F03E3D;
-      }
-   }
-   &__main {
-      font-size: rem(22px);  
-      margin-top: rem(24px);
-   }
-   &__text {
-      margin-top: rem(8px);
-   }
-   // customers 
-   &_centered {
-      .for-you__item {
-         padding: 32px 28px 34px 28px;
-         text-align: center;
-         @extend .border;
-         border-radius: 10px;
-      }
-      .for-you__icon {
-         margin: auto;
-      }
-   }
-}
-.for-you_b {
-   .button {
-      padding: rem(15px) rem(34px);
-   }
-}
-
-
-@media screen and (min-width:992px) {
-   .for-you {
-      &__icon {
-         margin: 0;
-      }
-      &__item {
-         text-align: left;
-      }
-   }
-}
-
+    text-align: center;
+    color: var(--color-text-black);
+    &__icon {
+       display: block;
+       margin: 0 auto;
+       width: rem(50px);
+       height: rem(50px);
+       border-radius: 19px;
+       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+       background-repeat: no-repeat;
+       background-position: center;
+       &:hover {
+          transform: scale(1.1);
+       }
+       &_cursor {
+          background-color: #02897A;
+          background-image: url('../images/for-You/cursor.svg');
+       }
+       &_surveys {
+          background-color: #4D8DFF;
+          background-image: url('../images/for-You/surveys.svg');
+       }
+       &_heart {
+          background-color: #740A76;
+          background-image: url('../images/for-You/heart.svg');
+       }
+       &_watch {
+          background-color: #F03E3D;
+          background-image: url('../images/for-You/watch.svg');
+       }
+    }
+    &_centered {
+       .for-you__icon_heart{
+          background-color: #F03E3D;
+       }
+    }
+    &__title {
+       font-size: rem(22px);  
+       margin-top: rem(24px);
+    }
+    &__caption {
+        font-size: rem(22px);  
+        margin-top: rem(24px);
+    }
+    &__text {
+       margin-top: rem(8px);
+    }
+    // customers 
+    &_centered {
+       .for-you__icon {
+          margin: auto;
+       }
+    }
+    .for-you__item {
+        @extend .border;
+        padding: 32px 28px 34px 28px;
+        border-radius: 10px;
+    }
+ }
+ 
+ @media screen and (min-width: 992px) {
+    .for-you:not(.for-you_centered) {
+       text-align: left;
+       .for-you__icon {
+          margin: 0;
+       }
+    }
+ }
+ 
+ 

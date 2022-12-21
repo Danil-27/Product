@@ -14,12 +14,11 @@
        }
     }
     &_content{
-       padding-top: 30px;
        .title {
           text-align: center;
        }
     }
-    &_info {
+    &_info, &_info-2 {
        .title_xs {
           margin-bottom: rem(8px);
        }
@@ -27,7 +26,7 @@
           margin-bottom: rem(24px);
        }
     }
-    &_info, &_content {
+    &_info , &_info-2 ,&_content {
        img {
           display: block;
           margin: auto;
@@ -58,6 +57,10 @@
           @extend .m-b;
        }
     }
+    &_strategies {
+        overflow-x: hidden;
+    
+     }
     //section for-you и process 
     &_bg-t , &_bg-b {
        width: 100%;
@@ -99,7 +102,10 @@
     &_ticket {
        text-align: center;
        padding-top: rem(35px);
-       padding-bottom: rem(45px);
+       padding-bottom: 0px;
+       .row {
+           padding-bottom: rem(45px);
+       }
        .ticket__wrapper{
           margin-bottom: rem(65px);
        }
@@ -107,9 +113,11 @@
     &_map {
        padding-bottom: rem(50px);
     }
-    
- }
- 
+    &_exterprise {
+        margin-bottom: rem(100px);
+    }
+}
+
  [data-theme="light"] {
     .section_bg-b {
        &::after {
@@ -154,13 +162,7 @@
        }
     }
  }
- @media screen and (max-width: 767px) {
-    .section_info {
-        .info-img-1 {
-            margin-bottom: rem(50px);
-        }
-    }
- }
+
  @media screen and (min-width:768px)  {
     .section {
        &_strategies {
@@ -173,35 +175,45 @@
              text-align: left;
           }
        }
-       &_info {
-          img {
+       &_info  {
+          .info-img-right , .info-img-left {
              margin: 0;
-          }
-       }
-       [class*="order-"] > img {
-          margin: 0 0 0 auto;
+            }
+            .info-img-right {
+                margin-left: auto;
+            }
+            .info-img-left {
+                margin-right: auto;
+            }
        }
     }
- }
- 
- @media screen and (min-width:992px) {
+}
+
+@media screen and (min-width:992px) {
     .section {
        padding-bottom: rem(150px);
        &_bg-b {
           margin-bottom: rem(150px);
-       }
-       &_content{
-          padding-top:25px;
-          padding-bottom: rem(115px);
-       }
-       &_bg-t , &_bg-b {
-          &::after {
-             width: 150%;
-          }
-       }
-       &_map {
-          padding-bottom: rem(50px);
-       }
+        }
+        &_content{
+            padding-bottom: rem(115px);
+        }
+        &_bg-t , &_bg-b {
+            &::after {
+                width: 150%;
+            }
+        }
+        &_map {
+            padding-bottom: rem(50px);
+        }
+        &_exterprise {
+            margin-bottom: rem(150px);
+        }
+        &_ticket {
+            padding-bottom: 0px;
+        }
+        &_info-2 {
+            padding-bottom: rem(100px);
+        }
     }
- }
- 
+}

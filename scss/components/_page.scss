@@ -1,9 +1,15 @@
 .page {
    padding-top: rem(100px); //header + indent
+   &__section {
+    padding-top: rem(100px);
+   }
 }
 
 @media screen and (min-width:992px) {
    .page {
       padding-top: rem(105px); //header + indent
-   }
+      &__section {
+        padding-top: rem(150px);
+       }
+    }
 }

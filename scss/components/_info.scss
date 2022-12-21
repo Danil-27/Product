@@ -37,22 +37,7 @@
 
  // customents
  .info_customers {
-    .info__picture_order-1 , .info__picture_order-3 {
-       justify-content: center;
-    }
-    .info__img {
-       width: rem(500px);
-       height: rem(280px);
-       &_one {
-          background-image: url("../images/customers/info-1.svg");
-       }
-       &_two {
-          background-image: url("../images/customers/info-2.svg");
-       }
-       &_three {
-          background-image: url("../images/customers/info-3.svg"); 
-       }
-    }
+
     .subtitle {
        margin-bottom: rem(16px);
     }
@@ -69,23 +54,11 @@
        margin-right: auto;
     }
  }
- 
- @media screen and (min-width:768px) {
-    .info_customers {
-       .info__picture_order-1 , .info__picture_order-3 {
-          order: 0;
-       }
-       .info__picture_order-2 {
-          order: 1;
-       }
-    }
- }
- 
- @media screen and (min-width:992px) {
-    .info_customers {
-       .info__picture_order-1 , .info__picture_order-3 {
-          justify-content: flex-start;
-       }
+ @media screen and (max-width:767px) {
+    .info__picture {
+        img {
+            margin-bottom: rem(70px);
+        }
     }
  }
  
@@ -94,42 +67,53 @@
     .title {
        font-weight: 600;
     }
-    .info__img {
-       width: rem(352px);
-       height: rem(288px);
-       &_two {
-          background-image: url("../images/pricing/pipke_xs.svg");
-       }
-    }
-    .info__tick {
-       background-color: #F4F5F7;
-       width: rem(50px);
-       height: rem(50px);
-       border-radius: 50%;
-       margin-right: rem(15px);
-       img {
-          width: 24px;
-          height: 24px;
-       }
-    }
     .info__item {
-       display: flex;
-       align-items: center;
-       margin-bottom: rem(16px);
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(16px);
+    }
+    .info__icon {
+        display: flex;
+        background-color: #F4F5F7;
+        width: rem(50px);
+        height: rem(50px);
+        border-radius: 50%;
+        margin-right: rem(15px);
+        img {
+        width: 24px;
+        height: 24px;
+        margin: auto;
+    }  
     }
     .info__text:not(:last-child) {
        margin-bottom: rem(32px);
     }
  }
  
+ @media screen and (max-width:767px){
+    .info_pricing {
+        .info__picture {
+            img {
+                margin-bottom: rem(30px);
+            }
+        }
+    }
+ }
  @media screen and (min-width:768px) {
     .info_pricing {
-       .info__img {
-          width: rem(530px);
-          height: rem(400px);
-          &_two {
-             background-image: url("../images/pricing/amico.svg");
-          }
-       }
+        .info__picture {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+ }
+
+
+ @media screen and (min-width:768px) {
+    .info {
+        &-img-right {
+            margin: 0px;
+            margin-left: auto;
+        }
     }
  }
