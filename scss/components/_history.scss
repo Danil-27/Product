@@ -24,7 +24,7 @@
          font-weight: 700;
       }
    }
-   &__paragraf {
+   &__paragraph {
       font-weight: 700;
       font-size: rem(24px);
    }
@@ -32,42 +32,44 @@
 
 .history_resourse {
    .history__container {
-      margin-bottom: rem(32px);
+        margin-bottom: rem(32px);
+    }
+    .history__main {
    }
    .history__main img {
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
+        display: flex;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
    }
    .history__wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
    }
    .history__text {
-      color: var(--color-text-black);
-      margin-right: rem(8px);
+        color: var(--color-text-black);
+        margin-right: rem(8px);
    }
    .history__icon {
-      width: rem(20px);
-      height: rem(20px);
-      font-weight: 700;
-      font-size: 18px;
-      background-repeat: no-repeat;
+        width: rem(20px);
+        height: rem(20px);
+        font-weight: 700;
+        font-size: 18px;
+        background-repeat: no-repeat;
    }
 }
 
 [data-theme="light"] {
    .history__icon{
-      background-image: url("/images/resources/circle_right.svg");
+         background-image: url("/images/resources/circle_right.svg");
    }
 }
 
 [data-theme="dark"] {
    .history__icon {
-      background-image: url("/images/resources/circle_right-white.svg");
+         background-image: url("/images/resources/circle_right-white.svg");
    }
 }
-
 
 

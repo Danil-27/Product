@@ -4,7 +4,10 @@
        font-weight: 600;
        margin-bottom: rem(12px);
     }
-    &__paragraf {
+    &-img {
+        margin-bottom: rem(50px);
+    }
+    &__paragraph {
        margin-bottom: rem(30px);
     }
     //castom two block
@@ -111,6 +114,9 @@
 
  @media screen and (min-width:768px) {
     .info {
+        &-img {
+            margin-bottom: 0;
+        }
         &-img-right {
             margin: 0px;
             margin-left: auto;

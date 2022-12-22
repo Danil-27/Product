@@ -1,4 +1,5 @@
 .swiper-container {
+    overflow: hidden;
    .swiper-pagination-bullet{
       width: rem(16px);
       height: rem(16px);
@@ -9,6 +10,8 @@
       background-color: var(--color-green);
    }
 }
+
+
 
 //буллет по центру 
 .swiper-paginations.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {

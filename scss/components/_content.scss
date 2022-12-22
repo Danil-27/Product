@@ -10,6 +10,7 @@
     .title {
       line-height: 1.4;
       margin-bottom: rem(18px);
+      margin-top: rem(10px);
     }
     &__source {
       display: flex;
@@ -51,6 +52,9 @@
       &__container {
         margin: auto 0;
         text-align: left;
+      }
+      .title {
+        margin-top: 0;
       }
       &__source {
         display: flex;

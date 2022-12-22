@@ -52,7 +52,7 @@ new Swiper('.swiper-container', {
     //Кол-во пролистоваемых слайдеров
   //   slidesPerGroup: 3,
     //Отступы
-    spaceBetween: 15,
+    spaceBetween: 32,
     //Бесконечный слайдер
     loop: true,
     loopedSlides: 3,

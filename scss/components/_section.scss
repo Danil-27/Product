@@ -29,10 +29,12 @@
     &_info , &_info-2 ,&_content {
        img {
           display: block;
-          margin: auto;
+          margin-left: auto;
+          margin-right: auto;
        }
     }
     &_for-you {
+        margin-bottom: rem(100px);
        &.section_bg {
           padding-top: rem(24px);
           padding-bottom: rem(38px);
@@ -57,10 +59,6 @@
           @extend .m-b;
        }
     }
-    &_strategies {
-        overflow-x: hidden;
-    
-     }
     //section for-you и process 
     &_bg-t , &_bg-b {
        width: 100%;
@@ -79,7 +77,7 @@
     }
     &_bg-b {
        padding-bottom: rem(40px);
-       margin-bottom: rem(40px);
+    //    margin-bottom: rem(40px);
        &::after {
           border-radius:  0 0 50% 50%;
        }
@@ -103,6 +101,7 @@
        text-align: center;
        padding-top: rem(35px);
        padding-bottom: 0px;
+       margin-bottom: rem(100px);
        .row {
            padding-bottom: rem(45px);
        }
@@ -198,6 +197,9 @@
         &_content{
             padding-bottom: rem(115px);
         }
+        .for-you {
+            margin-bottom: rem(150px);
+        }
         &_bg-t , &_bg-b {
             &::after {
                 width: 150%;
@@ -211,6 +213,7 @@
         }
         &_ticket {
             padding-bottom: 0px;
+            margin-bottom: rem(150px);
         }
         &_info-2 {
             padding-bottom: rem(100px);

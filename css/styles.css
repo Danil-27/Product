@@ -342,7 +342,7 @@ body {
           justify-content: center;
 }
 
-.border, .grade__wrapper, .card_review, .for-you .for-you__item {
+.border, .grade, .card_review, .for-you .for-you__item {
   border: 1px solid var(--border-color);
 }
 
@@ -2302,7 +2302,11 @@ body {
 }
 .section_info img, .section_info-2 img, .section_content img {
   display: block;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section_for-you {
+  margin-bottom: 6.25rem;
 }
 .section_for-you.section_bg {
   padding-top: 1.5rem;
@@ -2314,9 +2318,6 @@ body {
 }
 .section_process .button_primary {
   margin-top: 3.125rem;
-}
-.section_strategies {
-  overflow-x: hidden;
 }
 .section_bg-t, .section_bg-b {
   width: 100%;
@@ -2336,7 +2337,6 @@ body {
 }
 .section_bg-b {
   padding-bottom: 2.5rem;
-  margin-bottom: 2.5rem;
 }
 .section_bg-b::after {
   border-radius: 0 0 50% 50%;
@@ -2360,6 +2360,7 @@ body {
   text-align: center;
   padding-top: 2.1875rem;
   padding-bottom: 0px;
+  margin-bottom: 6.25rem;
 }
 .section_ticket .row {
   padding-bottom: 2.8125rem;
@@ -2425,6 +2426,9 @@ body {
   .section_content {
     padding-bottom: 7.1875rem;
   }
+  .section .for-you {
+    margin-bottom: 9.375rem;
+  }
   .section_bg-t::after, .section_bg-b::after {
     width: 150%;
   }
@@ -2436,6 +2440,7 @@ body {
   }
   .section_ticket {
     padding-bottom: 0px;
+    margin-bottom: 9.375rem;
   }
   .section_info-2 {
     padding-bottom: 6.25rem;
@@ -2452,6 +2457,7 @@ body {
 .content .title {
   line-height: 1.4;
   margin-bottom: 1.125rem;
+  margin-top: 0.625rem;
 }
 .content__source {
   display: -webkit-box;
@@ -2505,6 +2511,9 @@ body {
   .content__container {
     margin: auto 0;
     text-align: left;
+  }
+  .content .title {
+    margin-top: 0;
   }
   .content__source {
     display: -webkit-box;
@@ -2666,7 +2675,10 @@ body {
   font-weight: 600;
   margin-bottom: 0.75rem;
 }
-.info__paragraf {
+.info-img {
+  margin-bottom: 3.125rem;
+}
+.info__paragraph {
   margin-bottom: 1.875rem;
 }
 .info__item {
@@ -2769,6 +2781,9 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  .info-img {
+    margin-bottom: 0;
+  }
   .info-img-right {
     margin: 0px;
     margin-left: auto;
@@ -2872,10 +2887,6 @@ body {
     margin: 0 0 0 1rem;
   }
 }
-.strategies__container {
-  overflow-x: hidden;
-}
-
 .history__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2902,7 +2913,7 @@ body {
 .history__data span {
   font-weight: 700;
 }
-.history__paragraf {
+.history__paragraph {
   font-weight: 700;
   font-size: 1.5rem;
 }
@@ -2911,6 +2922,9 @@ body {
   margin-bottom: 2rem;
 }
 .history_resourse .history__main img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -2945,6 +2959,9 @@ body {
   background-image: url("/images/resources/circle_right-white.svg");
 }
 
+.swiper-container {
+  overflow: hidden;
+}
 .swiper-container .swiper-pagination-bullet {
   width: 1rem;
   height: 1rem;
@@ -2964,7 +2981,7 @@ body {
   top: 2.8125rem !important;
 }
 
-.business__wrapper {
+.business {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2994,7 +3011,7 @@ body {
           align-items: center;
   padding: 1.0625rem 1.375rem 0 1.375rem;
 }
-.business__paragraf {
+.business__paragraph {
   max-width: 20.625rem;
   text-align: center;
   font-weight: 600;
@@ -3025,10 +3042,7 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-  .business__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .business {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -3039,8 +3053,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    background-color: var(--color-green);
-    border-radius: 2rem;
   }
   .business__header {
     -webkit-box-align: start;
@@ -3048,12 +3060,9 @@ body {
             align-items: flex-start;
     padding: 3.125rem 0 3.75rem 3.125rem;
   }
-  .business__paragraf {
+  .business__paragraph {
     max-width: 31.875rem;
     text-align: start;
-    font-weight: 600;
-    font-size: 2rem;
-    color: var(--color-white);
     padding-bottom: 3.75rem;
   }
 }
@@ -3177,7 +3186,7 @@ body {
 .card_history .card__data span {
   font-weight: 700;
 }
-.card_history .card__paragraf {
+.card_history .card__paragraph {
   font-weight: 700;
   font-size: 1.5rem;
 }
@@ -3188,28 +3197,7 @@ body {
   }
 }
 .grade {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.grade:not(:last-child) {
   margin-bottom: 2rem;
-}
-.grade__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: auto;
   padding: 1.75rem 1.75rem 1.5rem 1.75rem;
   background-color: var(--color-white);
   border-radius: 5px;
@@ -3220,7 +3208,7 @@ body {
 .grade__img {
   margin-bottom: 1rem;
 }
-.grade__paragraf {
+.grade__paragraph {
   margin-bottom: 1rem;
 }
 .grade__block {
@@ -3240,22 +3228,9 @@ body {
   font-weight: 600;
 }
 
-.grade-2 {
-  background-color: var(--color-white);
-}
-
-@media screen and (min-width: 428px) {
-  .grade__wrapper {
-    width: 20.4375rem;
-    padding: 1.75rem 1.75rem 1.5rem 1.75rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .grade:not(:last-child) {
-    margin-bottom: 0;
-  }
-  .grade__wrapper {
-    width: auto;
+@media screen and (min-width: 768px) {
+  .grade {
+    margin-bottom: 2rem;
   }
 }
 .title {
@@ -3406,7 +3381,7 @@ body {
   transition: text-shadow 0.3s;
 }
 .navbar .menu__link_active, .navbar .menu__link:hover {
-  text-shadow: 0 0 0.5px var(--color-text-black), 0 0 0.5px var(--color-text-black);
+  text-shadow: 0 0 0.8px var(--color-text-black), 0 0 0.8px var(--color-text-black);
 }
 
 @media screen and (max-width: 991px) {
@@ -3654,7 +3629,7 @@ body {
             justify-content: center;
   }
 }
-@media screen and (max-width: 787px) {
+@media screen and (max-width: 767px) {
   .footer {
     text-align: center;
   }

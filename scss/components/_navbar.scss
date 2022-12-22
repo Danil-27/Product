@@ -11,8 +11,8 @@
         transition: text-shadow 0.3s;
         &_active,
         &:hover {
-          text-shadow: 0 0 0.5px var(--color-text-black),
-            0 0 0.5px var(--color-text-black);
+          text-shadow: 0 0 0.8px var(--color-text-black),
+            0 0 0.8px var(--color-text-black);
         }
       }
     }
