@@ -3,7 +3,7 @@
       list-style: none;
    }
    &__item {
-      border-bottom: 1px solid #474747;
+      border-bottom: rem(1px) solid #474747;
       overflow: hidden;
    }
       &__content {
@@ -22,7 +22,7 @@
       padding-left: rem(40px);
       width: 100%;
       margin-bottom: rem(16px);
-      height: 50px;
+      height: rem(50px);
       border: none;
       background-color: var(--color-bg-white);
       text-align: start;

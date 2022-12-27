@@ -2545,7 +2545,7 @@ body {
   background-image: url("../images/resources/img.svg");
 }
 .content_resources .content__other {
-  margin-left: 10px;
+  margin-left: 0.625rem;
   color: var(--color-text-dark);
 }
 .content_resources .content__other span {
@@ -2656,7 +2656,7 @@ body {
   margin: auto;
 }
 .for-you .for-you__item {
-  padding: 32px 28px 34px 28px;
+  padding: 2rem 1.75rem 2.125rem 1.75rem;
   border-radius: 10px;
 }
 
@@ -2761,8 +2761,8 @@ body {
   margin-right: 0.9375rem;
 }
 .info_pricing .info__icon img {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   margin: auto;
 }
 .info_pricing .info__text:not(:last-child) {
@@ -2947,7 +2947,7 @@ body {
   width: 1.25rem;
   height: 1.25rem;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
   background-repeat: no-repeat;
 }
 
@@ -3221,7 +3221,7 @@ body {
 }
 .grade__text {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .grade__text-o {
   color: var(--color-green);
@@ -3388,7 +3388,7 @@ body {
   .navbar__menu {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
-    padding: 10px 20px 50px;
+    padding: 0.625rem 1.25rem 3.125rem;
     width: 60%;
     will-change: transform;
     overflow-y: auto;
@@ -3444,8 +3444,8 @@ body {
 }
 .burger {
   display: block;
-  height: 20px;
-  width: 25px;
+  height: 1.25rem;
+  width: 1.5625rem;
   z-index: 2;
   position: relative;
   margin-left: 1.5rem;
@@ -3456,7 +3456,7 @@ body {
   left: 0;
   width: 100%;
   height: 0.166rem;
-  top: 8px;
+  top: 0.5rem;
   border-radius: 5.555rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -3466,39 +3466,49 @@ body {
   position: absolute;
   background-color: var(--color-bg-black);
   width: 100%;
-  height: 3px;
+  height: 0.1875rem;
   left: 0;
   border-radius: 5.555rem;
 }
 .burger::before {
   top: 0;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 .burger::after {
-  bottom: 1px;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  bottom: 0.0625rem;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 .burger.active::before {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  top: 8px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  top: 0.5rem;
 }
 .burger.active span {
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 .burger.active::after {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  bottom: 9px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  bottom: 0.5625rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -3526,14 +3536,14 @@ body {
   cursor: pointer;
 }
 .button_sm {
-  height: 53px;
-  padding: 0 30px;
-  line-height: 52px;
+  height: 3.3125rem;
+  padding: 0 1.875rem;
+  line-height: 3.25rem;
 }
 .button_xs {
-  height: 43px;
-  padding: 0 25px;
-  line-height: 42px;
+  height: 2.6875rem;
+  padding: 0 1.5625rem;
+  line-height: 2.625rem;
 }
 .button_bordered {
   border: 1px solid #BCD0E5;
@@ -3587,7 +3597,7 @@ body {
   font-size: 1.5rem;
 }
 .footer .logo__img {
-  height: 30px;
+  height: 1.875rem;
 }
 .footer .menu {
   margin: 0 0 2rem;
@@ -3833,7 +3843,7 @@ body {
           align-items: center;
 }
 .company__img img {
-  height: 50px;
+  height: 3.125rem;
 }
 
 .ticket_title {
@@ -3872,7 +3882,7 @@ body {
   list-style: none;
 }
 .accordion__item {
-  border-bottom: 1px solid #474747;
+  border-bottom: 0.0625rem solid #474747;
   overflow: hidden;
 }
 .accordion__content {
@@ -3892,7 +3902,7 @@ body {
   padding-left: 2.5rem;
   width: 100%;
   margin-bottom: 1rem;
-  height: 50px;
+  height: 3.125rem;
   border: none;
   background-color: var(--color-bg-white);
   text-align: start;

@@ -80,7 +80,7 @@
         background-image: url('../images/resources/img.svg');
       }
       &__other {
-        margin-left: 10px;
+        margin-left: rem(10px);
         color: var(--color-text-dark);
         span {
           color: var(--color-green);

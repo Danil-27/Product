@@ -16,14 +16,14 @@
        cursor: pointer;
     }
     &_sm {
-       height: 53px;
-       padding: 0 30px;
-       line-height: 52px;
+       height: rem(53px);
+       padding: 0 rem(30px);
+       line-height: rem(52px);
     }
     &_xs {
-       height: 43px;
-       padding: 0 25px;
-       line-height: 42px;
+       height: rem(43px);
+       padding: 0 rem(25px);
+       line-height: rem(42px);
     }
     &_bordered {
        border: 1px solid #BCD0E5;

@@ -54,7 +54,7 @@
     }
     .for-you__item {
         @extend .border;
-        padding: 32px 28px 34px 28px;
+        padding: rem(32px) rem(28px) rem(34px) rem(28px);
         border-radius: 10px;
     }
  }
