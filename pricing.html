@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light" id="noscroll">
+<html lang="en" data-theme="light" id="noscroll" itemscope itemtype="https://schema.org/FAQPage">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head itemscope itemtype="http://schema.org/WPHeader">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content='yes' name='apple-mobile-web-app-capable'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
-    <link rel="manifest" href="/images/Favicon/site.webmanifest">
-    <link rel="mask-icon" href="/images/Favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#2d89ef">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/Favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/images/Favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/images/Favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- SEO -->
-    <meta name="description" content="">
+    <meta itemprop="description" name="description" content="Our product provides various services in the promotion,support and management of your website." />
+    <meta itemprop="keywords" name="keywords" content="Tools, tutorials,design and innovation experts" />
     <!-- Title -->
-    <title>Product</title>
+    <title itemprop="headline">Product</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css" />
     <!-- Js -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <header class="header is-fixed">
+    <header class="header is-fixed" itemscope itemtype="http://schema.org/SiteNavigationElement">
         <div class="header__container container">
             <div class="header__logo">
                 <a class="logo" href="/index.html">
@@ -38,16 +39,16 @@
                 <div class="navbar__menu">
                     <ul class="menu">
                         <li class="menu__item">
-                            <a class="menu__link" href="index.html">Product</a>
+                            <a class="menu__link" href="index.html" itemprop="url">Product</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="customers.html">Customers</a>
+                            <a class="menu__link" href="customers.html" itemprop="url">Customers</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link menu__link_active" href="pricing.html">Pricing</a>
+                            <a class="menu__link menu__link_active" href="pricing.html" itemprop="url">Pricing</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="resources.html">Resources</a>
+                            <a class="menu__link" href="resources.html" itemprop="url">Resources</a>
                         </li>
                         <li class="menu__item">
                             <a class="button button_xs button_bordered" data-modal="popup1">Sign In</a>
@@ -74,15 +75,19 @@
                 <h2 class="title">Price Table</h2>
                 <p class="subtitle">We offer competitive price</p>
             </div>
-            <div class="row row-md-around">
-                <div class="col-sm-6 col-lg-4">
+            <div class="row row-md-around" itemscope itemtype="http://schema.org/ItemList">
+                <div class="col-sm-6 col-lg-4" itemscope itemtype="http://schema.org/Product" itemprop="itemListElement">
+                    <meta itemprop="description" content="Free, Only 2 Operators, Notifications, Landing Pages">
+                    <link itemprop="image" href="https://photos.google.com/photo/AF1QipONKs8hfkCbD5ehG9ncedSKG4wZeffvvgGT4qIP"/>
                     <div class="card card_price">
-                        <div class="card__title">Free</div>
-                        <p class="card__subtitle">Brief price description</p>
-                        <div class="card__body">
-                            <div class="card__cost">0</div>
+                        <div class="card__title"  itemprop="name">Free</div>
+                        <p class="card__subtitle">
+                            Brief price description
+                        </p>
+                        <div class="card__body" itemscope itemtype="http://schema.org/Offer" itemprop="offers">
+                            <div class="card__cost" itemprop="price" content="0">0</div>
                             <div class="card__col">
-                                <div class="card__unit">$</div>
+                                <div class="card__unit" itemprop="priceCurrency" content="USD">$</div>
                                 <div class="card__time">Per / month</div>
                             </div>
                         </div>
@@ -91,17 +96,23 @@
                             <span>Notifications</span>
                             <span>Landing Pages</span>
                         </div>
-                        <button class="button button_xs button_primary">Order Now</button>
+                        <button class="button button_xs button_primary">
+                            Order Now
+                        </button>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4" itemscope itemtype="http://schema.org/Product" itemprop="itemListElement">
+                    <meta itemprop="description" content="Free, Only 2 Operators, Notifications, Landing Pages">
+                    <link itemprop="image" href="https://photos.google.com/photo/AF1QipONKs8hfkCbD5ehG9ncedSKG4wZeffvvgGT4qIP"/>
                     <div class="card card_price">
-                        <div class="card__title">Standard</div>
-                        <p class="card__subtitle">Brief price description</p>
-                        <div class="card__body">
-                            <div class="card__cost">5</div>
+                        <div class="card__title" itemprop="name">Standard</div>
+                        <p class="card__subtitle">
+                            Brief price description
+                        </p>
+                        <div class="card__body" itemscope itemtype="http://schema.org/Offer" itemprop="offers">
+                            <div class="card__cost" itemprop="price" content="5">5</div>
                             <div class="card__col">
-                                <div class="card__unit">$</div>
+                                <div class="card__unit" itemprop="priceCurrency" content="USD">$</div>
                                 <div class="card__time">Per / month</div>
                             </div>
                         </div>
@@ -110,17 +121,23 @@
                             <span>Notifications</span>
                             <span>Landing Pages</span>
                         </div>
-                        <button class="button button_xs button_primary">Order Now</button>
+                        <button class="button button_xs button_primary">
+                            Order Now
+                        </button>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4" itemscope itemtype="http://schema.org/Product" itemprop="itemListElement">
+                    <meta itemprop="description" content="Free, Only 2 Operators, Notifications, Landing Pages">
+                    <link itemprop="image" href="https://photos.google.com/photo/AF1QipONKs8hfkCbD5ehG9ncedSKG4wZeffvvgGT4qIP"/>
                     <div class="card card_price">
-                        <div class="card__title">Premium</div>
-                        <p class="card__subtitle">Brief price description</p>
-                        <div class="card__body">
-                            <div class="card__cost">10</div>
+                        <div class="card__title" itemprop="name">Premium</div>
+                        <p class="card__subtitle">
+                            Brief price description
+                        </p>
+                        <div class="card__body" itemscope itemtype="http://schema.org/Offer" itemprop="offers">
+                            <div class="card__cost" itemprop="price" content="10">10</div>
                             <div class="card__col">
-                                <div class="card__unit">$</div>
+                                <div class="card__unit" itemprop="priceCurrency" content="USD">$</div>
                                 <div class="card__time">Per / month</div>
                             </div>
                         </div>
@@ -129,7 +146,9 @@
                             <span>Notifications</span>
                             <span>Landing Pages</span>
                         </div>
-                        <button class="button button_xs button_primary">Order Now</button>
+                        <button class="button button_xs button_primary">
+                            Order Now
+                        </button>
                     </div>
                 </div>
             </div>
@@ -181,56 +200,75 @@
             <div class="row row-center">
                 <div id="accordion" class="accordion col-lg-10">
                     <ul class="accordion__list">
-                        <li class="accordion__item">
-                            <button data-toggle="collapse" type="button"
-                                class="accordion__trigger subtitle subtitle_small"><span
-                                    class="accordion__decor"></span>What are my payment option?</button>
-                            <div class="accordion__content">
-                                <div class="accordion__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Nulla,
-                                    obcaecati a quidem quasi, deserunt quos quis quia harum. Nulla, obcaecati a quidem
-                                    quasi,
-                                    deserunt quos quis quia harum veniam velit minima dolorem eos cumque laborum
-                                    veritatis
-                                    facere cupiditate, ipsum perspiciatis!</div>
+                        <li class="accordion__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <button data-toggle="collapse" type="button" class="accordion__trigger subtitle subtitle_small">
+                                <span class="accordion__decor"></span>
+                                <span itemprop="name">What are my payment option?</span>
+                            </button>
+                            <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div class="accordion__text" itemprop="text">
+                                 <span>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Nulla,
+                                        obcaecati a quidem quasi, deserunt quos quis quia harum. Nulla, obcaecati a quidem
+                                        quasi,
+                                        deserunt quos quis quia harum veniam velit minima dolorem eos cumque laborum
+                                        veritatis
+                                        facere cupiditate, ipsum perspiciatis!
+                                 </span>
+                                </div>
                             </div>
                         </li>
-                        <li class="accordion__item">
-                            <button data-toggle="collapse" type="button"
-                                class="accordion__trigger subtitle subtitle_small"><span
-                                    class="accordion__decor"></span>How can I invite collaborator to platform?</button>
-                            <div class="accordion__content">
-                                <div class="accordion__text">After creating your account you will have an oppurtunity to
-                                    create your first project that will be associated withthe collaborators e-mail. An
-                                    invitation will be sent automatically. Then, invited user will have to confirm his
-                                    account by e-mail and finish userd onboarding.</div>
+                        <li class="accordion__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <button data-toggle="collapse" type="button" class="accordion__trigger subtitle subtitle_small" >
+                                <span class="accordion__decor"></span>
+                                <span itemprop="name">How can I invite collaborator to platform?</span>
+                            </button>
+                            <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div class="accordion__text" itemprop="text">
+                                    <span>
+                                        After creating your account you will have an oppurtunity to
+                                        create your first project that will be associated withthe collaborators e-mail. An
+                                        invitation will be sent automatically. Then, invited user will have to confirm his
+                                        account by e-mail and finish userd onboarding.
+                                    </span>
+                                </div>
                             </div>
                         </li>
-                        <li class="accordion__item">
-                            <button data-toggle="collapse" type="button"
-                                class="accordion__trigger subtitle subtitle_small"><span
-                                    class="accordion__decor"></span>Can I upgrade my plan?</button>
-                            <div class="accordion__content">
-                                <div class="accordion__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Nulla,
-                                    obcaecati a quidem quasi, deserunt quos quis quia harum.</div>
+                        <li class="accordion__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <button data-toggle="collapse" type="button" class="accordion__trigger subtitle subtitle_small">
+                                <span class="accordion__decor"></span>
+                                <span itemprop="name">Can I upgrade my plan?</span>
+                            </button>
+                            <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div class="accordion__text" itemprop="text">
+                                    <span>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Nulla,
+                                        obcaecati a quidem quasi, deserunt quos quis quia harum.</div>
+                                    </span>
                             </div>
                         </li>
-                        <li class="accordion__item">
-                            <button data-toggle="collapse" type="button"
-                                class="accordion__trigger subtitle subtitle_small"><span
-                                    class="accordion__decor"></span>Can I cancel my plan at anytime?</button>
-                            <div class="accordion__content">
-                                <div class="accordion__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Nulla,
-                                    obcaecati a quidem quasi, deserunt quos quis quia harum.</div>
+                        <li class="accordion__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <button data-toggle="collapse" type="button" class="accordion__trigger subtitle subtitle_small">
+                                <span class="accordion__decor"></span>
+                                <span itemprop="name">Can I cancel my plan at anytime?</span>
+                            </button>
+                            <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"></div>>
+                                <div class="accordion__text" itemprop="text">
+                                    <span>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Nulla,
+                                        obcaecati a quidem quasi, deserunt quos quis quia harum.
+                                    </span>
+                                </div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
-        <footer class="footer container">
+        <footer class="footer container" itemscope itemtype="http://schema.org/WPFooter">
             <div class="row row-lg-between">
                 <div class="col-lg-3">
                     <a class="logo" href="/index.html">
