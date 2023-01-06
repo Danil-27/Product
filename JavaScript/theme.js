@@ -14,6 +14,3 @@ setTheme(theme)
       setTheme(theme)
       localStorage.setItem('theme' , theme)
    })
-
-// =====================================================
-

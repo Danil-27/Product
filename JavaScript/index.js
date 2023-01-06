@@ -42,6 +42,3 @@ function closeNav() {
   btn.classList.remove('active')
   htmlEl.classList.remove('noscroll')  
 }
-
-
-//==================================================================================
