@@ -49,3 +49,9 @@
     margin-top: auto;
     margin-bottom: auto;
  }
+
+
+
+.is-aspect-ratio {
+    aspect-ratio: attr(width) / atter(height);
+}

@@ -3,10 +3,6 @@
    align-items: center;
    z-index: 2;
    text-decoration: none;
-   &__img {
-      max-width: rem(40px);
-      max-height: rem(36px);
-   }
    &__text {
       display: none;
       font-size: rem(30px);

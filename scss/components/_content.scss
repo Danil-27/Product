@@ -31,20 +31,21 @@
       margin-right: rem(28px);
     }
   }
-  
-  @media screen and (max-width: 360px) {
+
+@media screen and (max-width: 380px) {
     .content {
-      &__link-video {
-        width: 100%;
-        justify-content: center;
-        margin-top: rem(12px);
-      }
-      .button {
-        justify-content: center;
-        margin-right: rem(0px);
-      }
+        &__source {
+            flex-direction: column;
+            align-items: center;
+        }
+        .button {
+            margin-right: 0px;
+        }
+        &__link-video {
+            margin-top: rem(8px);
+        }
     }
-  }
+}
   
   @media screen and (min-width: 768px) {
     .content {

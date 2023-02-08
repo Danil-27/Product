@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@600&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap");
 :root {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -241,8 +240,8 @@ svg:not(:root) {
    * 1. Black prints faster: http://www.sanbeiji.com/archives/953
    */
   *,
-*:before,
-*:after {
+  *:before,
+  *:after {
     background: transparent !important;
     color: #000 !important; /* [1] */
     -webkit-box-shadow: none !important;
@@ -250,7 +249,7 @@ svg:not(:root) {
     text-shadow: none !important;
   }
   a,
-a:visited {
+  a:visited {
     text-decoration: underline;
   }
   a[href]:after {
@@ -264,11 +263,11 @@ a:visited {
    * pseudo protocol.
   */
   a[href^="#"]:after,
-a[href^="javascript:"]:after {
+  a[href^="javascript:"]:after {
     content: "";
   }
   pre,
-blockquote {
+  blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
@@ -279,27 +278,27 @@ blockquote {
     display: table-header-group;
   }
   tr,
-img {
+  img {
     page-break-inside: avoid;
   }
   img {
     max-width: 100% !important;
   }
   p,
-h2,
-h3 {
+  h2,
+  h3 {
     orphans: 3;
     widows: 3;
   }
   h2,
-h3 {
+  h3 {
     page-break-after: avoid;
   }
 }
 :root {
   --baseline: 1.625;
   --base-font-size: 16px;
-  --font-family:"Poppins" , sans-serif;
+  --font-family: "Poppins", sans-serif;
   --font-weight: 400;
 }
 
@@ -371,6 +370,10 @@ body {
 .is-vertical-centering {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.is-aspect-ratio {
+  aspect-ratio: attr(width)/atter(height);
 }
 
 :root {
@@ -2264,11 +2267,6 @@ body {
       -ms-flex: 1;
           flex: 1;
 }
-.header .logo {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
 
 @media screen and (min-width: 992px) {
   .header__container {
@@ -2487,19 +2485,21 @@ body {
   margin-right: 1.75rem;
 }
 
-@media screen and (max-width: 360px) {
-  .content__link-video {
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 0.75rem;
+@media screen and (max-width: 380px) {
+  .content__source {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .content .button {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-right: 0rem;
+    margin-right: 0px;
+  }
+  .content__link-video {
+    margin-top: 0.5rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -3145,6 +3145,19 @@ body {
   background-color: var(--color-white);
   color: var(--color-black);
 }
+.card__images {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+}
+.card__images img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .card_review {
   max-width: 20.5rem;
   margin: 0 auto;
@@ -3336,10 +3349,6 @@ body {
           align-items: center;
   z-index: 2;
   text-decoration: none;
-}
-.logo__img {
-  max-width: 2.5rem;
-  max-height: 2.25rem;
 }
 .logo__text {
   display: none;
@@ -3633,7 +3642,7 @@ body {
 
 @media screen and (max-width: 991px) {
   .footer .logo,
-.footer .social {
+  .footer .social {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
