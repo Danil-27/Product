@@ -9,8 +9,10 @@
       color: var(--color-standart);
       border-radius: rem(8px);
       transition: background-color 0.3s;
-      .card__title {
+      .card__title , .card__cost {
           font-weight: 700;
+      }
+      .card__title {
           font-size: rem(24px);
         }
       .card__subtitle {
@@ -26,7 +28,6 @@
         color: var(--color-green);
       }
       .card__cost {
-        font-weight: 700;
         font-size: rem(78px);
       }
       .card__col {

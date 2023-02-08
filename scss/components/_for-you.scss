@@ -35,11 +35,7 @@
           background-color: #F03E3D;
        }
     }
-    &__title {
-       font-size: rem(22px);  
-       margin-top: rem(24px);
-    }
-    &__caption {
+    &__title , &__caption {
         font-size: rem(22px);  
         margin-top: rem(24px);
     }
@@ -52,7 +48,7 @@
           margin: auto;
        }
     }
-    .for-you__item {
+    &__item {
         @extend .border;
         padding: rem(32px) rem(28px) rem(34px) rem(28px);
         border-radius: 10px;

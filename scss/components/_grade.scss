@@ -7,10 +7,7 @@
     &_m {
         margin-bottom: rem(32px);
     }
-    &__img {
-        margin-bottom: rem(16px);
-    }
-    &__paragraph {
+    &__img , &__paragraph {
         margin-bottom: rem(16px);
     }
     &__block {
@@ -31,6 +28,6 @@
 
 @media screen and (min-width:768px) {
     .grade {
-    margin-bottom: rem(32px);
+        margin-bottom: rem(32px);
     }
 }

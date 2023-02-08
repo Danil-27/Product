@@ -3,8 +3,10 @@
     &_bg {
        @extend .bg-light-dark;
     }
+    &__heading , &_ticket {
+        text-align: center;
+    }
     &__heading {
-       text-align: center;
        margin-bottom: rem(50px);
        .subtitle {
           margin-top: rem(8px);
@@ -17,6 +19,12 @@
        .title {
           text-align: center;
        }
+    }
+    &_info_top-b {
+        padding-top: rem(150px);
+    }
+    &_info-customers {
+        padding-top: rem(100px);
     }
     &_info, &_info-2 {
        .title_xs {
@@ -33,150 +41,117 @@
           margin-right: auto;
        }
     }
+
     &_for-you {
-        margin-bottom: rem(100px);
-       &.section_bg {
-          padding-top: rem(24px);
-          padding-bottom: rem(38px);
-       }
-       .for-you {
-          @extend .m-b;
-       }
+        &.section_bg {
+            padding-top: rem(24px);
+        }
+        .for-you {
+            padding-bottom: rem(32px);
+        }
     }
     &_for-you, &_process {
        .button_primary {
           display: block;
           margin: auto;
-       }
+        }
     }
     &_process {
-       .button_primary {
-          margin-top: rem(50px);
-       }
+        .button_primary {
+            margin-top: rem(50px);
+        }
     }
-    &_stories {
-       .strategies {
-          @extend .m-b;
-       }
-    }
-    //section for-you и process 
     &_bg-t , &_bg-b {
        width: 100%;
        overflow: hidden;
        position: relative;
        &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 270%;
+           content: "";
+           position: absolute;
+           top: 0;
+           left: 50%;
+           transform: translateX(-50%);
+           width: 270%;
           height: 100%;
           z-index: -1;
        }
     }
     &_bg-b {
-       padding-bottom: rem(40px);
-    //    margin-bottom: rem(40px);
-       &::after {
-          border-radius:  0 0 50% 50%;
-       }
+        padding-bottom: rem(40px);
+        &::after {
+            border-radius:  0 0 50% 50%;
+        }
     }
     &_bg-t {
-       padding-top: rem(40px);
-       &::after {
-          border-radius: 50% 50% 0 0;
-       }
+        padding-top: rem(40px);
+        &::after {
+            border-radius: 50% 50% 0 0;
+        }
     }
     &_company {
-       padding-bottom: rem(60px);
-       .company {
-          margin-top: rem(80px);
-       }
-       .company__img {
-          margin-bottom: rem(60px);
-       }
+        padding-bottom: rem(60px);
+        .company {
+            margin-top: rem(80px);
+        }
+        .company__img {
+            margin-bottom: rem(60px);
+        }
+    }
+    &_exterprise , &_ticket {
+        margin-bottom: rem(100px);
+    }
+    &_for-you-customers , &_ticket {
+        padding-bottom: 0px;
     }
     &_ticket {
-       text-align: center;
        padding-top: rem(35px);
-       padding-bottom: 0px;
-       margin-bottom: rem(100px);
        .row {
            padding-bottom: rem(45px);
-       }
-       .ticket__wrapper{
-          margin-bottom: rem(65px);
-       }
+        }
+        .ticket__wrapper{
+            margin-bottom: rem(65px);
+        }
     }
     &_map {
-       padding-bottom: rem(50px);
-    }
-    &_exterprise {
-        margin-bottom: rem(100px);
+        padding-bottom: rem(50px);
     }
 }
 
- [data-theme="light"] {
-    .section_bg-b {
-       &::after {
-          background:  linear-gradient(179.59deg,rgba(255, 255, 255, 0.0001) 0.35%, #EDEDED  99.63%);
-       }
-    }
-    .section_bg-t {
-       &::after {
-          background: linear-gradient(179.59deg, #EDEDED 0.35%, rgba(255, 255, 255, 0.0001) 99.63%);
-       }
-    }
- }
- 
- [data-theme="dark"]  {
-    .section_bg-b{
-       &::after {
-          background: linear-gradient(179.59deg,rgba(67, 67, 67, 0.0001)  0.35%, #22343D  99.63%);
-       }
-    }
-    .section_bg-t {
-       &::after {
-          background: linear-gradient(179.59deg, #22343D 0.35%, rgba(67, 67, 67, 0.0001) 99.63%);
-       }
-    }
- }
- 
- @media screen and (min-width:575px) {
+
+@media screen and (min-width:575px) {
     .section {
-       &_bg-t , &_bg-b {
-          &::after {
-             width: 170%;
-          }
-       }
+        &_bg-t , &_bg-b {
+            &::after {
+                width: 170%;
+            }
+        }
     }
- }
- @media screen and (min-width:576px) {
+}
+@media screen and (min-width:576px) {
     .section {
        &_ticket {
           .ticket__wrapper{
-             margin-bottom: 0px;
-          }
+              margin-bottom: 0px;
+            }
        }
     }
- }
+}
 
- @media screen and (min-width:768px)  {
+@media screen and (min-width:768px)  {
     .section {
-       &_strategies {
-          .section__heading {
+        &_strategies {
+            .section__heading {
              text-align: left;
           }
        }
        &_content {
-          .title {
-             text-align: left;
+           .title {
+               text-align: left;
           }
-       }
+        }
        &_info  {
-          .info-img-right , .info-img-left {
-             margin: 0;
+           .info-img-right , .info-img-left {
+               margin: 0;
             }
             .info-img-right {
                 margin-left: auto;
@@ -184,39 +159,64 @@
             .info-img-left {
                 margin-right: auto;
             }
-       }
+        }
     }
 }
 
 @media screen and (min-width:992px) {
     .section {
-       padding-bottom: rem(150px);
-       &_bg-b {
-          margin-bottom: rem(150px);
+        padding-bottom: rem(150px);
+        &_for-you {
+            .for-you {
+                padding-bottom: rem(68px);
+            }
+        }
+        &_for-you-index {
+            padding-bottom: rem(90px);
+        }
+        &_exterprise , &_ticket {
+            margin-bottom: rem(150px);
+        }
+        &_bg , &_ticket {
+            padding-bottom: 0px;
         }
         &_content{
             padding-bottom: rem(115px);
-        }
-        .for-you {
-            margin-bottom: rem(150px);
         }
         &_bg-t , &_bg-b {
             &::after {
                 width: 150%;
             }
         }
-        &_map {
-            padding-bottom: rem(50px);
-        }
-        &_exterprise {
-            margin-bottom: rem(150px);
-        }
-        &_ticket {
-            padding-bottom: 0px;
-            margin-bottom: rem(150px);
-        }
         &_info-2 {
             padding-bottom: rem(100px);
         }
     }
 }
+
+[data-theme="light"] {
+   .section_bg-b {
+      &::after {
+         background:  linear-gradient(179.59deg,rgba(255, 255, 255, 0.0001) 0.35%, #EDEDED  99.63%);
+      }
+   }
+   .section_bg-t {
+      &::after {
+         background: linear-gradient(179.59deg, #EDEDED 0.35%, rgba(255, 255, 255, 0.0001) 99.63%);
+      }
+   }
+}
+
+[data-theme="dark"]  {
+   .section_bg-b{
+      &::after {
+         background: linear-gradient(179.59deg,rgba(67, 67, 67, 0.0001)  0.35%, #22343D  99.63%);
+      }
+   }
+   .section_bg-t {
+      &::after {
+         background: linear-gradient(179.59deg, #22343D 0.35%, rgba(67, 67, 67, 0.0001) 99.63%);
+      }
+   }
+}
+

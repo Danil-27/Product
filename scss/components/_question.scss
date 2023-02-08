@@ -71,7 +71,7 @@
  .accordion__content {
    width: 100%;
    overflow: hidden;
-   font-size: 13px;
+   font-size: rem(13px);
    height: 0;
    transition: all 1s linear;
  }

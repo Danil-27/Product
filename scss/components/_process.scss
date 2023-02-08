@@ -3,18 +3,6 @@
     align-items: center;
     justify-content: center;
     margin-top: rem(32px);
-    &_one {
-       order: 1;
-    }
-    &_two {
-       order: 4;
-    }
-    &_three {
-       order: 2;
-    }
-    &_four {
-       order: 3;
-    }
     &__icon {
        margin: 0 rem(16px) 0 0;
        &_one {

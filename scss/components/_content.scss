@@ -12,14 +12,15 @@
       margin-bottom: rem(18px);
       margin-top: rem(10px);
     }
+    &__source , &__link-video {
+        display: flex;
+    }
     &__source {
-      display: flex;
       justify-content: center;
       flex-wrap: wrap;
       margin-top: rem(30px);
     }
     &__link-video {
-      display: flex;
       align-items: center;
       color: var(--color-green);
       font-weight: 600;
@@ -67,11 +68,10 @@
   
   .content_resources {
     .content {
-      &__source {
+      &__source , &__shell {
         display: flex;
       }
       &__shell {
-        display: flex;
         align-items: center;
         margin-top: rem(20px);
       }
