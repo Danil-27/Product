@@ -10,11 +10,19 @@
       background-color: var(--color-white);
       position: relative;
    }
-   &__main img {
-      width: 100%;
-      text-align: center;
-      border-top-left-radius: rem(8px);
-      border-top-right-radius: rem(8px);
+    &__images {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 7/4;
+    img {
+        text-align: center;
+        border-top-left-radius: rem(8px);
+        border-top-right-radius: rem(8px);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
    }
    &__header {
       padding: rem(24px) rem(24px) rem(40px) rem(24px);

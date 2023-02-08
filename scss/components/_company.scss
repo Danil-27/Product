@@ -2,9 +2,15 @@
    &__img {
       display: flex;
       justify-content: center;
-      align-items: center;
       img {
-         height: rem(50px);
+          object-fit: contain;
+          object-position: 50% 50%;
+          height: rem(50px);
       }
    }
 }
+
+          //   aspect-ratio: attr(width) / atter(height);
+          //   object-fit: contain;
+          //   &__contain {
+          // }
