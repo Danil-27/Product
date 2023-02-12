@@ -11,16 +11,21 @@ new Swiper('.swiper-container', {
         loopedSlides: 2,
       },
       992: {
+        pagination: {
+            el: '.swiper-paginations',
+            //булеты
+            clickable: true,
+          },
         slidesPerView: 3,
         slidesPerGroup: 3,
         loopedSlides: 3,
       },
     },
-    pagination: {
-      el: '.swiper-paginations',
-      //булеты
-      clickable: true,
-    },
+    // pagination: {
+    //   el: '.swiper-paginations',
+    //   //булеты
+    //   clickable: true,
+    // },
     //Отключаем предзагрузку картинки
     preloadImeges: false,
     //Подзагрузка картинок
