@@ -16,6 +16,9 @@
       color: var(--color-text-black);
    }
    &__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: rem(150px);
       height: rem(150px);
       border-radius: 50%;
@@ -25,11 +28,9 @@
       background-position: center;
       &_red {
          background-color: #f03d3d1a;
-         background-image: url("/images/customers/Activity-1.svg");
       }
       &_blue {
          background-color: #11b6e40e;
-         background-image: url("/images/customers/Chart.svg");
       }
    }
 }

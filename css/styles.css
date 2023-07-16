@@ -3851,6 +3851,15 @@ body {
   color: var(--color-text-black);
 }
 .ticket__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 9.375rem;
   height: 9.375rem;
   border-radius: 50%;
@@ -3861,11 +3870,9 @@ body {
 }
 .ticket__img_red {
   background-color: rgba(240, 61, 61, 0.1019607843);
-  background-image: url("/images/customers/Activity-1.svg");
 }
 .ticket__img_blue {
   background-color: rgba(17, 182, 228, 0.0549019608);
-  background-image: url("/images/customers/Chart.svg");
 }
 
 .accordion____list {
