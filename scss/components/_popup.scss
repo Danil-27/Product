@@ -1,143 +1,143 @@
 .popup {
-    &__bg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      background: rgba(0, 0, 0, 0.5);
-      opacity: 0;
-      pointer-events: none;
-      z-index: 10;
-      overflow-y: auto;
-      overflow-x: hidden;
-    }
-    &__container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(0);
-      width: 80%;
-      height: 100%;
-      overflow-y: auto;
-      padding: rem(35px);
-      background: #fff;
-      background-color: var(--color-bg-white);
-      z-index: 20;
-    }
-    &__close {
-      position: absolute;
-      top: rem(10px);
-      right: rem(10px);
-      cursor: pointer;
-      z-index: 10;
-    }
-  
-    &.active {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: 1050;
-      .popup__bg {
-        opacity: 1;
-        pointer-events: all;
-      }
-      .popup__container {
-        transform: translate(-50%, -50%) scale(1);
-        transition: 0.5s transform;
-      }
-    }
-    .label {
-      width: 100%;
-      margin-bottom: rem(25px);
-      display: flex;
-      flex-direction: column-reverse;
-      &__text {
-        color: #000;
-      }
-    }
-    .input {
-      height: rem(45px);
-      font-size: rem(18px);
-      border: none;
-      outline: none;
-      border-bottom: rem(1px) solid #cfd0d3;
-      padding: 0 rem(5px);
-      width: 100%;
-      &:focus {
-        border-bottom-color: var(--color-green);
-        transition: border-bottom-color .35s ease-in;
-      }
-      &:focus + .label__text {
-        color: var(--color-green);
-        transition: color .35s ease-in;
-      }
-    }
-    .checkbox {
-      margin-top: rem(10px);
-      margin-bottom: rem(20px);
-      color: var(--color-text-black);
-    }
-  }
-  
-  .popup {
-    .checkbox {
-      &__input {
-        display: none;
-      }
-      &__tabel {
-        padding-left: rem(10px);
-        &::before {
-          content: '';
-          display: inline-block;
-          width: rem(20px);
-          height: rem(20px);
-          background-color: rgb(255, 255, 255);
-          border: solid 1px #000;
-          vertical-align: middle;
-          margin-left: rem(-10px);
-          margin-right: rem(10px);
-        }
-      }
-      input[type='checkbox']:checked + label::before {
-        background-image: url('https://cdn-icons-png.flaticon.com/512/60/60731.png');
-        background-size: rem(16px);
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-    }
-    .label {
-      width: 100%;
-      margin-bottom: rem(25px);
-      display: flex;
-      flex-direction: column-reverse;
-      &__text {
-        font-size: rem(14px);
-        text-transform: uppercase;
-        font-weight: 500;
-        color: #cfd0d3;
-        margin-bottom: rem(5px);
-      }
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
-    .popup_md {
-      .popup__container {
-        width: 70%;
-        height: auto;
-      }
-    }
-  }
-  
-  @media screen and (min-width: 992px) {
-    .popup_md {
-      .popup__container {
-        width: rem(600px);
-        padding: rem(45px);
-      }
-    }
-  }
-  
+	&__bg {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0, 0, 0, 0.5);
+		opacity: 0;
+		pointer-events: none;
+		z-index: 10;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	&__container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(0);
+		width: 80%;
+		height: 96%;
+		overflow-y: auto;
+		padding: rem(35px);
+		background: #fff;
+		background-color: var(--color-bg-white);
+		z-index: 20;
+		border-radius: rem(6px);
+	}
+	&__close {
+		position: absolute;
+		top: rem(10px);
+		right: rem(10px);
+		cursor: pointer;
+		z-index: 10;
+	}
+
+	&.active {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		z-index: 1050;
+		.popup__bg {
+			opacity: 1;
+			pointer-events: all;
+		}
+		.popup__container {
+			transform: translate(-50%, -50%) scale(1);
+			transition: 0.5s transform;
+		}
+	}
+	.label {
+		width: 100%;
+		margin-bottom: rem(25px);
+		display: flex;
+		flex-direction: column-reverse;
+		&__text {
+			color: #000;
+		}
+	}
+	.input {
+		height: rem(45px);
+		font-size: rem(18px);
+		border: none;
+		outline: none;
+		border-bottom: rem(1px) solid #cfd0d3;
+		padding: 0 rem(5px);
+		width: 100%;
+		&:focus {
+			border-bottom-color: var(--color-green);
+			transition: border-bottom-color 0.35s ease-in;
+		}
+		&:focus + .label__text {
+			color: var(--color-green);
+			transition: color 0.35s ease-in;
+		}
+	}
+	.checkbox {
+		margin-top: rem(10px);
+		margin-bottom: rem(20px);
+		color: var(--color-text-black);
+	}
+}
+
+.popup {
+	.checkbox {
+		&__input {
+			display: none;
+		}
+		&__tabel {
+			padding-left: rem(10px);
+			&::before {
+				content: '';
+				display: inline-block;
+				width: rem(20px);
+				height: rem(20px);
+				background-color: rgb(255, 255, 255);
+				border: solid 1px #000;
+				vertical-align: middle;
+				margin-left: rem(-10px);
+				margin-right: rem(10px);
+			}
+		}
+		input[type='checkbox']:checked + label::before {
+			background-image: url('https://cdn-icons-png.flaticon.com/512/60/60731.png');
+			background-size: rem(16px);
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+	.label {
+		width: 100%;
+		margin-bottom: rem(25px);
+		display: flex;
+		flex-direction: column-reverse;
+		&__text {
+			font-size: rem(14px);
+			text-transform: uppercase;
+			font-weight: 500;
+			color: #cfd0d3;
+			margin-bottom: rem(5px);
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.popup_md {
+		.popup__container {
+			width: 70%;
+			height: auto;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.popup_md {
+		.popup__container {
+			width: rem(600px);
+			padding: rem(45px);
+		}
+	}
+}
